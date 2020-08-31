@@ -198,7 +198,8 @@ void RenderingEngine::init(const Matx33f& K, int width, int height, float zNear,
     
     initRenderingBuffers();
     
-    shaderFolder = "src/";
+    //shaderFolder = "src/";
+	shaderFolder = "E:\\General/Документы/GitHub/LearningDLL/TestRBOT_DLL/DLLs/src/";
     
     initShaderProgram(silhouetteShaderProgram, "silhouette");
     initShaderProgram(phongblinnShaderProgram, "phongblinn");

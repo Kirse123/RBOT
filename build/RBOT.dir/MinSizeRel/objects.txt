@@ -1,0 +1,12 @@
+E:/General/Документы/GitHub/RBOT/build/RBOT.dir/MinSizeRel/mocs_compilation.obj
+E:/General/Документы/GitHub/RBOT/build/RBOT.dir/MinSizeRel/main.obj
+E:/General/Документы/GitHub/RBOT/build/RBOT.dir/MinSizeRel/model.obj
+E:/General/Документы/GitHub/RBOT/build/RBOT.dir/MinSizeRel/object3d.obj
+E:/General/Документы/GitHub/RBOT/build/RBOT.dir/MinSizeRel/optimization_engine.obj
+E:/General/Документы/GitHub/RBOT/build/RBOT.dir/MinSizeRel/pose_estimator6d.obj
+E:/General/Документы/GitHub/RBOT/build/RBOT.dir/MinSizeRel/rendering_engine.obj
+E:/General/Документы/GitHub/RBOT/build/RBOT.dir/MinSizeRel/signed_distance_transform2d.obj
+E:/General/Документы/GitHub/RBOT/build/RBOT.dir/MinSizeRel/tclc_histograms.obj
+E:/General/Документы/GitHub/RBOT/build/RBOT.dir/MinSizeRel/template_view.obj
+E:/General/Документы/GitHub/RBOT/build/RBOT.dir/MinSizeRel/transformations.obj
+E:/General/Документы/GitHub/RBOT/build/RBOT.dir/MinSizeRel/unity_interface.obj

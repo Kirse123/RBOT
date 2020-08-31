@@ -1,0 +1,496 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{13A0F62B-DA0F-397F-8C5D-4718426C26AF}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>RBOT</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\General\Документы\GitHub\RBOT\build\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">RBOT.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">RBOT</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\General\Документы\GitHub\RBOT\build\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">RBOT.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">RBOT</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\General\Документы\GitHub\RBOT\build\bin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">RBOT.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">RBOT</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\General\Документы\GitHub\RBOT\build\bin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">RBOT.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">RBOT</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\General\Документы\GitHub\RBOT\build;E:\General\Документы\GitHub\RBOT;E:\General\Документы\GitHub\RBOT\build\RBOT_autogen\include_Debug;E:\Assimp\assimp-5.0.1\include;E:\opencv\build;E:\opencv\opencv-4.2.0\include;E:\opencv\opencv-4.2.0\modules\core\include;E:\opencv\opencv-4.2.0\modules\flann\include;E:\opencv\opencv-4.2.0\modules\imgproc\include;E:\opencv\opencv_contrib-master\modules\intensity_transform\include;E:\opencv\opencv-4.2.0\modules\ml\include;E:\opencv\opencv_contrib-master\modules\phase_unwrapping\include;E:\opencv\opencv-4.2.0\modules\photo\include;E:\opencv\opencv_contrib-master\modules\plot\include;E:\opencv\opencv_contrib-master\modules\quality\include;E:\opencv\opencv_contrib-master\modules\reg\include;E:\opencv\opencv_contrib-master\modules\surface_matching\include;E:\opencv\opencv_contrib-master\modules\xphoto\include;E:\opencv\opencv-4.2.0\modules\dnn\include;E:\opencv\opencv_contrib-master\modules\dnn_superres\include;E:\opencv\opencv-4.2.0\modules\features2d\include;E:\opencv\opencv_contrib-master\modules\fuzzy\include;E:\opencv\opencv-4.2.0\modules\gapi\include;E:\opencv\opencv_contrib-master\modules\hfs\include;E:\opencv\opencv_contrib-master\modules\img_hash\include;E:\opencv\opencv-4.2.0\modules\imgcodecs\include;E:\opencv\opencv_contrib-master\modules\line_descriptor\include;E:\opencv\opencv_contrib-master\modules\saliency\include;E:\opencv\opencv_contrib-master\modules\text\include;E:\opencv\opencv-4.2.0\modules\videoio\include;E:\opencv\opencv-4.2.0\modules\calib3d\include;E:\opencv\opencv_contrib-master\modules\cvv\include;E:\opencv\opencv_contrib-master\modules\datasets\include;E:\opencv\opencv-4.2.0\modules\highgui\include;E:\opencv\opencv-4.2.0\modules\objdetect\include;E:\opencv\opencv_contrib-master\modules\rapid\include;E:\opencv\opencv_contrib-master\modules\rgbd\include;E:\opencv\opencv_contrib-master\modules\shape\include;E:\opencv\opencv_contrib-master\modules\structured_light\include;E:\opencv\opencv-4.2.0\modules\ts\include;E:\opencv\opencv-4.2.0\modules\video\include;E:\opencv\opencv_contrib-master\modules\videostab\include;E:\opencv\opencv_contrib-master\modules\xfeatures2d\include;E:\opencv\opencv_contrib-master\modules\ximgproc\include;E:\opencv\opencv_contrib-master\modules\xobjdetect\include;E:\opencv\opencv_contrib-master\modules\aruco\include;E:\opencv\opencv_contrib-master\modules\bgsegm\include;E:\opencv\opencv_contrib-master\modules\bioinspired\include;E:\opencv\opencv_contrib-master\modules\ccalib\include;E:\opencv\opencv_contrib-master\modules\dnn_objdetect\include;E:\opencv\opencv_contrib-master\modules\dpm\include;E:\opencv\opencv_contrib-master\modules\face\include;E:\opencv\opencv_contrib-master\modules\optflow\include;E:\opencv\opencv-4.2.0\modules\stitching\include;E:\opencv\opencv_contrib-master\modules\superres\include;E:\opencv\opencv_contrib-master\modules\tracking\include;E:\opencv\opencv_contrib-master\modules\stereo\include;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtWidgets;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtANGLE;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\.\mkspecs\win32-msvc;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtOpenGL;E:\Assimp\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>
+      </SuppressStartupBanner>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_OPENGL_LIB;CMAKE_INTDIR="Debug";RBOT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_OPENGL_LIB;CMAKE_INTDIR=\"Debug\";RBOT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\General\Документы\GitHub\RBOT\build;E:\General\Документы\GitHub\RBOT;E:\General\Документы\GitHub\RBOT\build\RBOT_autogen\include_Debug;E:\Assimp\assimp-5.0.1\include;E:\opencv\build;E:\opencv\opencv-4.2.0\include;E:\opencv\opencv-4.2.0\modules\core\include;E:\opencv\opencv-4.2.0\modules\flann\include;E:\opencv\opencv-4.2.0\modules\imgproc\include;E:\opencv\opencv_contrib-master\modules\intensity_transform\include;E:\opencv\opencv-4.2.0\modules\ml\include;E:\opencv\opencv_contrib-master\modules\phase_unwrapping\include;E:\opencv\opencv-4.2.0\modules\photo\include;E:\opencv\opencv_contrib-master\modules\plot\include;E:\opencv\opencv_contrib-master\modules\quality\include;E:\opencv\opencv_contrib-master\modules\reg\include;E:\opencv\opencv_contrib-master\modules\surface_matching\include;E:\opencv\opencv_contrib-master\modules\xphoto\include;E:\opencv\opencv-4.2.0\modules\dnn\include;E:\opencv\opencv_contrib-master\modules\dnn_superres\include;E:\opencv\opencv-4.2.0\modules\features2d\include;E:\opencv\opencv_contrib-master\modules\fuzzy\include;E:\opencv\opencv-4.2.0\modules\gapi\include;E:\opencv\opencv_contrib-master\modules\hfs\include;E:\opencv\opencv_contrib-master\modules\img_hash\include;E:\opencv\opencv-4.2.0\modules\imgcodecs\include;E:\opencv\opencv_contrib-master\modules\line_descriptor\include;E:\opencv\opencv_contrib-master\modules\saliency\include;E:\opencv\opencv_contrib-master\modules\text\include;E:\opencv\opencv-4.2.0\modules\videoio\include;E:\opencv\opencv-4.2.0\modules\calib3d\include;E:\opencv\opencv_contrib-master\modules\cvv\include;E:\opencv\opencv_contrib-master\modules\datasets\include;E:\opencv\opencv-4.2.0\modules\highgui\include;E:\opencv\opencv-4.2.0\modules\objdetect\include;E:\opencv\opencv_contrib-master\modules\rapid\include;E:\opencv\opencv_contrib-master\modules\rgbd\include;E:\opencv\opencv_contrib-master\modules\shape\include;E:\opencv\opencv_contrib-master\modules\structured_light\include;E:\opencv\opencv-4.2.0\modules\ts\include;E:\opencv\opencv-4.2.0\modules\video\include;E:\opencv\opencv_contrib-master\modules\videostab\include;E:\opencv\opencv_contrib-master\modules\xfeatures2d\include;E:\opencv\opencv_contrib-master\modules\ximgproc\include;E:\opencv\opencv_contrib-master\modules\xobjdetect\include;E:\opencv\opencv_contrib-master\modules\aruco\include;E:\opencv\opencv_contrib-master\modules\bgsegm\include;E:\opencv\opencv_contrib-master\modules\bioinspired\include;E:\opencv\opencv_contrib-master\modules\ccalib\include;E:\opencv\opencv_contrib-master\modules\dnn_objdetect\include;E:\opencv\opencv_contrib-master\modules\dpm\include;E:\opencv\opencv_contrib-master\modules\face\include;E:\opencv\opencv_contrib-master\modules\optflow\include;E:\opencv\opencv-4.2.0\modules\stitching\include;E:\opencv\opencv_contrib-master\modules\superres\include;E:\opencv\opencv_contrib-master\modules\tracking\include;E:\opencv\opencv_contrib-master\modules\stereo\include;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtWidgets;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtANGLE;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\.\mkspecs\win32-msvc;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtOpenGL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\General\Документы\GitHub\RBOT\build;E:\General\Документы\GitHub\RBOT;E:\General\Документы\GitHub\RBOT\build\RBOT_autogen\include_Debug;E:\Assimp\assimp-5.0.1\include;E:\opencv\build;E:\opencv\opencv-4.2.0\include;E:\opencv\opencv-4.2.0\modules\core\include;E:\opencv\opencv-4.2.0\modules\flann\include;E:\opencv\opencv-4.2.0\modules\imgproc\include;E:\opencv\opencv_contrib-master\modules\intensity_transform\include;E:\opencv\opencv-4.2.0\modules\ml\include;E:\opencv\opencv_contrib-master\modules\phase_unwrapping\include;E:\opencv\opencv-4.2.0\modules\photo\include;E:\opencv\opencv_contrib-master\modules\plot\include;E:\opencv\opencv_contrib-master\modules\quality\include;E:\opencv\opencv_contrib-master\modules\reg\include;E:\opencv\opencv_contrib-master\modules\surface_matching\include;E:\opencv\opencv_contrib-master\modules\xphoto\include;E:\opencv\opencv-4.2.0\modules\dnn\include;E:\opencv\opencv_contrib-master\modules\dnn_superres\include;E:\opencv\opencv-4.2.0\modules\features2d\include;E:\opencv\opencv_contrib-master\modules\fuzzy\include;E:\opencv\opencv-4.2.0\modules\gapi\include;E:\opencv\opencv_contrib-master\modules\hfs\include;E:\opencv\opencv_contrib-master\modules\img_hash\include;E:\opencv\opencv-4.2.0\modules\imgcodecs\include;E:\opencv\opencv_contrib-master\modules\line_descriptor\include;E:\opencv\opencv_contrib-master\modules\saliency\include;E:\opencv\opencv_contrib-master\modules\text\include;E:\opencv\opencv-4.2.0\modules\videoio\include;E:\opencv\opencv-4.2.0\modules\calib3d\include;E:\opencv\opencv_contrib-master\modules\cvv\include;E:\opencv\opencv_contrib-master\modules\datasets\include;E:\opencv\opencv-4.2.0\modules\highgui\include;E:\opencv\opencv-4.2.0\modules\objdetect\include;E:\opencv\opencv_contrib-master\modules\rapid\include;E:\opencv\opencv_contrib-master\modules\rgbd\include;E:\opencv\opencv_contrib-master\modules\shape\include;E:\opencv\opencv_contrib-master\modules\structured_light\include;E:\opencv\opencv-4.2.0\modules\ts\include;E:\opencv\opencv-4.2.0\modules\video\include;E:\opencv\opencv_contrib-master\modules\videostab\include;E:\opencv\opencv_contrib-master\modules\xfeatures2d\include;E:\opencv\opencv_contrib-master\modules\ximgproc\include;E:\opencv\opencv_contrib-master\modules\xobjdetect\include;E:\opencv\opencv_contrib-master\modules\aruco\include;E:\opencv\opencv_contrib-master\modules\bgsegm\include;E:\opencv\opencv_contrib-master\modules\bioinspired\include;E:\opencv\opencv_contrib-master\modules\ccalib\include;E:\opencv\opencv_contrib-master\modules\dnn_objdetect\include;E:\opencv\opencv_contrib-master\modules\dpm\include;E:\opencv\opencv_contrib-master\modules\face\include;E:\opencv\opencv_contrib-master\modules\optflow\include;E:\opencv\opencv-4.2.0\modules\stitching\include;E:\opencv\opencv_contrib-master\modules\superres\include;E:\opencv\opencv_contrib-master\modules\tracking\include;E:\opencv\opencv_contrib-master\modules\stereo\include;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtWidgets;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtANGLE;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\.\mkspecs\win32-msvc;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtOpenGL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreLinkEvent>
+      <Message>Auto build dll exports</Message>
+      <Command>setlocal
+cd E:\General\Документы\GitHub\RBOT\build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E __create_def E:/General/Документы/GitHub/RBOT/build/RBOT.dir/$(Configuration)/exports.def E:/General/Документы/GitHub/RBOT/build/RBOT.dir/Debug//objects.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreLinkEvent>
+    <PreBuildEvent>
+      <Message>Automatic MOC for target RBOT</Message>
+      <Command>setlocal
+cd E:\General\Документы\GitHub\RBOT\build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen E:/General/Документы/GitHub/RBOT/build/CMakeFiles/RBOT_autogen.dir/AutogenInfo.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>E:\opencv\build\lib\Debug\opencv_gapi420d.lib;E:\opencv\build\lib\Debug\opencv_stitching420d.lib;E:\opencv\build\lib\Debug\opencv_aruco420d.lib;E:\opencv\build\lib\Debug\opencv_bgsegm420d.lib;E:\opencv\build\lib\Debug\opencv_bioinspired420d.lib;E:\opencv\build\lib\Debug\opencv_ccalib420d.lib;E:\opencv\build\lib\Debug\opencv_cvv420d.lib;E:\opencv\build\lib\Debug\opencv_dnn_objdetect420d.lib;E:\opencv\build\lib\Debug\opencv_dnn_superres420d.lib;E:\opencv\build\lib\Debug\opencv_dpm420d.lib;E:\opencv\build\lib\Debug\opencv_face420d.lib;E:\opencv\build\lib\Debug\opencv_fuzzy420d.lib;E:\opencv\build\lib\Debug\opencv_hfs420d.lib;E:\opencv\build\lib\Debug\opencv_img_hash420d.lib;E:\opencv\build\lib\Debug\opencv_intensity_transform420d.lib;E:\opencv\build\lib\Debug\opencv_line_descriptor420d.lib;E:\opencv\build\lib\Debug\opencv_quality420d.lib;E:\opencv\build\lib\Debug\opencv_rapid420d.lib;E:\opencv\build\lib\Debug\opencv_reg420d.lib;E:\opencv\build\lib\Debug\opencv_rgbd420d.lib;E:\opencv\build\lib\Debug\opencv_saliency420d.lib;E:\opencv\build\lib\Debug\opencv_stereo420d.lib;E:\opencv\build\lib\Debug\opencv_structured_light420d.lib;E:\opencv\build\lib\Debug\opencv_superres420d.lib;E:\opencv\build\lib\Debug\opencv_surface_matching420d.lib;E:\opencv\build\lib\Debug\opencv_tracking420d.lib;E:\opencv\build\lib\Debug\opencv_videostab420d.lib;E:\opencv\build\lib\Debug\opencv_xfeatures2d420d.lib;E:\opencv\build\lib\Debug\opencv_xobjdetect420d.lib;E:\opencv\build\lib\Debug\opencv_xphoto420d.lib;opengl32.lib;glu32.lib;E:\Assimp\build\code\Release\assimp-vc141-mt.lib;E:\opencv\build\lib\Debug\opencv_shape420d.lib;E:\opencv\build\lib\Debug\opencv_highgui420d.lib;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\Qt5OpenGLd.lib;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\Qt5Widgetsd.lib;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\Qt5Guid.lib;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\Qt5Cored.lib;E:\opencv\build\lib\Debug\opencv_datasets420d.lib;E:\opencv\build\lib\Debug\opencv_plot420d.lib;E:\opencv\build\lib\Debug\opencv_text420d.lib;E:\opencv\build\lib\Debug\opencv_dnn420d.lib;E:\opencv\build\lib\Debug\opencv_ml420d.lib;E:\opencv\build\lib\Debug\opencv_phase_unwrapping420d.lib;E:\opencv\build\lib\Debug\opencv_optflow420d.lib;E:\opencv\build\lib\Debug\opencv_ximgproc420d.lib;E:\opencv\build\lib\Debug\opencv_video420d.lib;E:\opencv\build\lib\Debug\opencv_videoio420d.lib;E:\opencv\build\lib\Debug\opencv_imgcodecs420d.lib;E:\opencv\build\lib\Debug\opencv_objdetect420d.lib;E:\opencv\build\lib\Debug\opencv_calib3d420d.lib;E:\opencv\build\lib\Debug\opencv_features2d420d.lib;E:\opencv\build\lib\Debug\opencv_flann420d.lib;E:\opencv\build\lib\Debug\opencv_photo420d.lib;E:\opencv\build\lib\Debug\opencv_imgproc420d.lib;E:\opencv\build\lib\Debug\opencv_core420d.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/General/Документы/GitHub/RBOT/build/bin/Debug/RBOT.lib</ImportLibrary>
+      <ModuleDefinitionFile>E:/General/Документы/GitHub/RBOT/build/RBOT.dir/$(Configuration)/exports.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>E:/General/Документы/GitHub/RBOT/build/bin/Debug/RBOT.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\General\Документы\GitHub\RBOT\build;E:\General\Документы\GitHub\RBOT;E:\General\Документы\GitHub\RBOT\build\RBOT_autogen\include_Release;E:\Assimp\assimp-5.0.1\include;E:\opencv\build;E:\opencv\opencv-4.2.0\include;E:\opencv\opencv-4.2.0\modules\core\include;E:\opencv\opencv-4.2.0\modules\flann\include;E:\opencv\opencv-4.2.0\modules\imgproc\include;E:\opencv\opencv_contrib-master\modules\intensity_transform\include;E:\opencv\opencv-4.2.0\modules\ml\include;E:\opencv\opencv_contrib-master\modules\phase_unwrapping\include;E:\opencv\opencv-4.2.0\modules\photo\include;E:\opencv\opencv_contrib-master\modules\plot\include;E:\opencv\opencv_contrib-master\modules\quality\include;E:\opencv\opencv_contrib-master\modules\reg\include;E:\opencv\opencv_contrib-master\modules\surface_matching\include;E:\opencv\opencv_contrib-master\modules\xphoto\include;E:\opencv\opencv-4.2.0\modules\dnn\include;E:\opencv\opencv_contrib-master\modules\dnn_superres\include;E:\opencv\opencv-4.2.0\modules\features2d\include;E:\opencv\opencv_contrib-master\modules\fuzzy\include;E:\opencv\opencv-4.2.0\modules\gapi\include;E:\opencv\opencv_contrib-master\modules\hfs\include;E:\opencv\opencv_contrib-master\modules\img_hash\include;E:\opencv\opencv-4.2.0\modules\imgcodecs\include;E:\opencv\opencv_contrib-master\modules\line_descriptor\include;E:\opencv\opencv_contrib-master\modules\saliency\include;E:\opencv\opencv_contrib-master\modules\text\include;E:\opencv\opencv-4.2.0\modules\videoio\include;E:\opencv\opencv-4.2.0\modules\calib3d\include;E:\opencv\opencv_contrib-master\modules\cvv\include;E:\opencv\opencv_contrib-master\modules\datasets\include;E:\opencv\opencv-4.2.0\modules\highgui\include;E:\opencv\opencv-4.2.0\modules\objdetect\include;E:\opencv\opencv_contrib-master\modules\rapid\include;E:\opencv\opencv_contrib-master\modules\rgbd\include;E:\opencv\opencv_contrib-master\modules\shape\include;E:\opencv\opencv_contrib-master\modules\structured_light\include;E:\opencv\opencv-4.2.0\modules\ts\include;E:\opencv\opencv-4.2.0\modules\video\include;E:\opencv\opencv_contrib-master\modules\videostab\include;E:\opencv\opencv_contrib-master\modules\xfeatures2d\include;E:\opencv\opencv_contrib-master\modules\ximgproc\include;E:\opencv\opencv_contrib-master\modules\xobjdetect\include;E:\opencv\opencv_contrib-master\modules\aruco\include;E:\opencv\opencv_contrib-master\modules\bgsegm\include;E:\opencv\opencv_contrib-master\modules\bioinspired\include;E:\opencv\opencv_contrib-master\modules\ccalib\include;E:\opencv\opencv_contrib-master\modules\dnn_objdetect\include;E:\opencv\opencv_contrib-master\modules\dpm\include;E:\opencv\opencv_contrib-master\modules\face\include;E:\opencv\opencv_contrib-master\modules\optflow\include;E:\opencv\opencv-4.2.0\modules\stitching\include;E:\opencv\opencv_contrib-master\modules\superres\include;E:\opencv\opencv_contrib-master\modules\tracking\include;E:\opencv\opencv_contrib-master\modules\stereo\include;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtWidgets;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtANGLE;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\.\mkspecs\win32-msvc;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtOpenGL;E:\Assimp\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>
+      </SuppressStartupBanner>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;QT_OPENGL_LIB;CMAKE_INTDIR="Release";RBOT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;QT_OPENGL_LIB;CMAKE_INTDIR=\"Release\";RBOT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\General\Документы\GitHub\RBOT\build;E:\General\Документы\GitHub\RBOT;E:\General\Документы\GitHub\RBOT\build\RBOT_autogen\include_Release;E:\Assimp\assimp-5.0.1\include;E:\opencv\build;E:\opencv\opencv-4.2.0\include;E:\opencv\opencv-4.2.0\modules\core\include;E:\opencv\opencv-4.2.0\modules\flann\include;E:\opencv\opencv-4.2.0\modules\imgproc\include;E:\opencv\opencv_contrib-master\modules\intensity_transform\include;E:\opencv\opencv-4.2.0\modules\ml\include;E:\opencv\opencv_contrib-master\modules\phase_unwrapping\include;E:\opencv\opencv-4.2.0\modules\photo\include;E:\opencv\opencv_contrib-master\modules\plot\include;E:\opencv\opencv_contrib-master\modules\quality\include;E:\opencv\opencv_contrib-master\modules\reg\include;E:\opencv\opencv_contrib-master\modules\surface_matching\include;E:\opencv\opencv_contrib-master\modules\xphoto\include;E:\opencv\opencv-4.2.0\modules\dnn\include;E:\opencv\opencv_contrib-master\modules\dnn_superres\include;E:\opencv\opencv-4.2.0\modules\features2d\include;E:\opencv\opencv_contrib-master\modules\fuzzy\include;E:\opencv\opencv-4.2.0\modules\gapi\include;E:\opencv\opencv_contrib-master\modules\hfs\include;E:\opencv\opencv_contrib-master\modules\img_hash\include;E:\opencv\opencv-4.2.0\modules\imgcodecs\include;E:\opencv\opencv_contrib-master\modules\line_descriptor\include;E:\opencv\opencv_contrib-master\modules\saliency\include;E:\opencv\opencv_contrib-master\modules\text\include;E:\opencv\opencv-4.2.0\modules\videoio\include;E:\opencv\opencv-4.2.0\modules\calib3d\include;E:\opencv\opencv_contrib-master\modules\cvv\include;E:\opencv\opencv_contrib-master\modules\datasets\include;E:\opencv\opencv-4.2.0\modules\highgui\include;E:\opencv\opencv-4.2.0\modules\objdetect\include;E:\opencv\opencv_contrib-master\modules\rapid\include;E:\opencv\opencv_contrib-master\modules\rgbd\include;E:\opencv\opencv_contrib-master\modules\shape\include;E:\opencv\opencv_contrib-master\modules\structured_light\include;E:\opencv\opencv-4.2.0\modules\ts\include;E:\opencv\opencv-4.2.0\modules\video\include;E:\opencv\opencv_contrib-master\modules\videostab\include;E:\opencv\opencv_contrib-master\modules\xfeatures2d\include;E:\opencv\opencv_contrib-master\modules\ximgproc\include;E:\opencv\opencv_contrib-master\modules\xobjdetect\include;E:\opencv\opencv_contrib-master\modules\aruco\include;E:\opencv\opencv_contrib-master\modules\bgsegm\include;E:\opencv\opencv_contrib-master\modules\bioinspired\include;E:\opencv\opencv_contrib-master\modules\ccalib\include;E:\opencv\opencv_contrib-master\modules\dnn_objdetect\include;E:\opencv\opencv_contrib-master\modules\dpm\include;E:\opencv\opencv_contrib-master\modules\face\include;E:\opencv\opencv_contrib-master\modules\optflow\include;E:\opencv\opencv-4.2.0\modules\stitching\include;E:\opencv\opencv_contrib-master\modules\superres\include;E:\opencv\opencv_contrib-master\modules\tracking\include;E:\opencv\opencv_contrib-master\modules\stereo\include;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtWidgets;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtANGLE;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\.\mkspecs\win32-msvc;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtOpenGL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\General\Документы\GitHub\RBOT\build;E:\General\Документы\GitHub\RBOT;E:\General\Документы\GitHub\RBOT\build\RBOT_autogen\include_Release;E:\Assimp\assimp-5.0.1\include;E:\opencv\build;E:\opencv\opencv-4.2.0\include;E:\opencv\opencv-4.2.0\modules\core\include;E:\opencv\opencv-4.2.0\modules\flann\include;E:\opencv\opencv-4.2.0\modules\imgproc\include;E:\opencv\opencv_contrib-master\modules\intensity_transform\include;E:\opencv\opencv-4.2.0\modules\ml\include;E:\opencv\opencv_contrib-master\modules\phase_unwrapping\include;E:\opencv\opencv-4.2.0\modules\photo\include;E:\opencv\opencv_contrib-master\modules\plot\include;E:\opencv\opencv_contrib-master\modules\quality\include;E:\opencv\opencv_contrib-master\modules\reg\include;E:\opencv\opencv_contrib-master\modules\surface_matching\include;E:\opencv\opencv_contrib-master\modules\xphoto\include;E:\opencv\opencv-4.2.0\modules\dnn\include;E:\opencv\opencv_contrib-master\modules\dnn_superres\include;E:\opencv\opencv-4.2.0\modules\features2d\include;E:\opencv\opencv_contrib-master\modules\fuzzy\include;E:\opencv\opencv-4.2.0\modules\gapi\include;E:\opencv\opencv_contrib-master\modules\hfs\include;E:\opencv\opencv_contrib-master\modules\img_hash\include;E:\opencv\opencv-4.2.0\modules\imgcodecs\include;E:\opencv\opencv_contrib-master\modules\line_descriptor\include;E:\opencv\opencv_contrib-master\modules\saliency\include;E:\opencv\opencv_contrib-master\modules\text\include;E:\opencv\opencv-4.2.0\modules\videoio\include;E:\opencv\opencv-4.2.0\modules\calib3d\include;E:\opencv\opencv_contrib-master\modules\cvv\include;E:\opencv\opencv_contrib-master\modules\datasets\include;E:\opencv\opencv-4.2.0\modules\highgui\include;E:\opencv\opencv-4.2.0\modules\objdetect\include;E:\opencv\opencv_contrib-master\modules\rapid\include;E:\opencv\opencv_contrib-master\modules\rgbd\include;E:\opencv\opencv_contrib-master\modules\shape\include;E:\opencv\opencv_contrib-master\modules\structured_light\include;E:\opencv\opencv-4.2.0\modules\ts\include;E:\opencv\opencv-4.2.0\modules\video\include;E:\opencv\opencv_contrib-master\modules\videostab\include;E:\opencv\opencv_contrib-master\modules\xfeatures2d\include;E:\opencv\opencv_contrib-master\modules\ximgproc\include;E:\opencv\opencv_contrib-master\modules\xobjdetect\include;E:\opencv\opencv_contrib-master\modules\aruco\include;E:\opencv\opencv_contrib-master\modules\bgsegm\include;E:\opencv\opencv_contrib-master\modules\bioinspired\include;E:\opencv\opencv_contrib-master\modules\ccalib\include;E:\opencv\opencv_contrib-master\modules\dnn_objdetect\include;E:\opencv\opencv_contrib-master\modules\dpm\include;E:\opencv\opencv_contrib-master\modules\face\include;E:\opencv\opencv_contrib-master\modules\optflow\include;E:\opencv\opencv-4.2.0\modules\stitching\include;E:\opencv\opencv_contrib-master\modules\superres\include;E:\opencv\opencv_contrib-master\modules\tracking\include;E:\opencv\opencv_contrib-master\modules\stereo\include;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtWidgets;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtANGLE;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\.\mkspecs\win32-msvc;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtOpenGL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreLinkEvent>
+      <Message>Auto build dll exports</Message>
+      <Command>setlocal
+cd E:\General\Документы\GitHub\RBOT\build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E __create_def E:/General/Документы/GitHub/RBOT/build/RBOT.dir/$(Configuration)/exports.def E:/General/Документы/GitHub/RBOT/build/RBOT.dir/Release//objects.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreLinkEvent>
+    <PreBuildEvent>
+      <Message>Automatic MOC for target RBOT</Message>
+      <Command>setlocal
+cd E:\General\Документы\GitHub\RBOT\build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen E:/General/Документы/GitHub/RBOT/build/CMakeFiles/RBOT_autogen.dir/AutogenInfo.json Release
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>E:\opencv\build\lib\Release\opencv_gapi420.lib;E:\opencv\build\lib\Release\opencv_stitching420.lib;E:\opencv\build\lib\Release\opencv_aruco420.lib;E:\opencv\build\lib\Release\opencv_bgsegm420.lib;E:\opencv\build\lib\Release\opencv_bioinspired420.lib;E:\opencv\build\lib\Release\opencv_ccalib420.lib;E:\opencv\build\lib\Release\opencv_cvv420.lib;E:\opencv\build\lib\Release\opencv_dnn_objdetect420.lib;E:\opencv\build\lib\Release\opencv_dnn_superres420.lib;E:\opencv\build\lib\Release\opencv_dpm420.lib;E:\opencv\build\lib\Release\opencv_face420.lib;E:\opencv\build\lib\Release\opencv_fuzzy420.lib;E:\opencv\build\lib\Release\opencv_hfs420.lib;E:\opencv\build\lib\Release\opencv_img_hash420.lib;E:\opencv\build\lib\Release\opencv_intensity_transform420.lib;E:\opencv\build\lib\Release\opencv_line_descriptor420.lib;E:\opencv\build\lib\Release\opencv_quality420.lib;E:\opencv\build\lib\Release\opencv_rapid420.lib;E:\opencv\build\lib\Release\opencv_reg420.lib;E:\opencv\build\lib\Release\opencv_rgbd420.lib;E:\opencv\build\lib\Release\opencv_saliency420.lib;E:\opencv\build\lib\Release\opencv_stereo420.lib;E:\opencv\build\lib\Release\opencv_structured_light420.lib;E:\opencv\build\lib\Release\opencv_superres420.lib;E:\opencv\build\lib\Release\opencv_surface_matching420.lib;E:\opencv\build\lib\Release\opencv_tracking420.lib;E:\opencv\build\lib\Release\opencv_videostab420.lib;E:\opencv\build\lib\Release\opencv_xfeatures2d420.lib;E:\opencv\build\lib\Release\opencv_xobjdetect420.lib;E:\opencv\build\lib\Release\opencv_xphoto420.lib;opengl32.lib;glu32.lib;E:\Assimp\build\code\Release\assimp-vc141-mt.lib;E:\opencv\build\lib\Release\opencv_shape420.lib;E:\opencv\build\lib\Release\opencv_highgui420.lib;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\Qt5OpenGL.lib;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\Qt5Widgets.lib;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\Qt5Gui.lib;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\Qt5Core.lib;E:\opencv\build\lib\Release\opencv_datasets420.lib;E:\opencv\build\lib\Release\opencv_plot420.lib;E:\opencv\build\lib\Release\opencv_text420.lib;E:\opencv\build\lib\Release\opencv_dnn420.lib;E:\opencv\build\lib\Release\opencv_ml420.lib;E:\opencv\build\lib\Release\opencv_phase_unwrapping420.lib;E:\opencv\build\lib\Release\opencv_optflow420.lib;E:\opencv\build\lib\Release\opencv_ximgproc420.lib;E:\opencv\build\lib\Release\opencv_video420.lib;E:\opencv\build\lib\Release\opencv_videoio420.lib;E:\opencv\build\lib\Release\opencv_imgcodecs420.lib;E:\opencv\build\lib\Release\opencv_objdetect420.lib;E:\opencv\build\lib\Release\opencv_calib3d420.lib;E:\opencv\build\lib\Release\opencv_features2d420.lib;E:\opencv\build\lib\Release\opencv_flann420.lib;E:\opencv\build\lib\Release\opencv_photo420.lib;E:\opencv\build\lib\Release\opencv_imgproc420.lib;E:\opencv\build\lib\Release\opencv_core420.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/General/Документы/GitHub/RBOT/build/bin/Release/RBOT.lib</ImportLibrary>
+      <ModuleDefinitionFile>E:/General/Документы/GitHub/RBOT/build/RBOT.dir/$(Configuration)/exports.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>E:/General/Документы/GitHub/RBOT/build/bin/Release/RBOT.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\General\Документы\GitHub\RBOT\build;E:\General\Документы\GitHub\RBOT;E:\General\Документы\GitHub\RBOT\build\RBOT_autogen\include_MinSizeRel;E:\Assimp\assimp-5.0.1\include;E:\opencv\build;E:\opencv\opencv-4.2.0\include;E:\opencv\opencv-4.2.0\modules\core\include;E:\opencv\opencv-4.2.0\modules\flann\include;E:\opencv\opencv-4.2.0\modules\imgproc\include;E:\opencv\opencv_contrib-master\modules\intensity_transform\include;E:\opencv\opencv-4.2.0\modules\ml\include;E:\opencv\opencv_contrib-master\modules\phase_unwrapping\include;E:\opencv\opencv-4.2.0\modules\photo\include;E:\opencv\opencv_contrib-master\modules\plot\include;E:\opencv\opencv_contrib-master\modules\quality\include;E:\opencv\opencv_contrib-master\modules\reg\include;E:\opencv\opencv_contrib-master\modules\surface_matching\include;E:\opencv\opencv_contrib-master\modules\xphoto\include;E:\opencv\opencv-4.2.0\modules\dnn\include;E:\opencv\opencv_contrib-master\modules\dnn_superres\include;E:\opencv\opencv-4.2.0\modules\features2d\include;E:\opencv\opencv_contrib-master\modules\fuzzy\include;E:\opencv\opencv-4.2.0\modules\gapi\include;E:\opencv\opencv_contrib-master\modules\hfs\include;E:\opencv\opencv_contrib-master\modules\img_hash\include;E:\opencv\opencv-4.2.0\modules\imgcodecs\include;E:\opencv\opencv_contrib-master\modules\line_descriptor\include;E:\opencv\opencv_contrib-master\modules\saliency\include;E:\opencv\opencv_contrib-master\modules\text\include;E:\opencv\opencv-4.2.0\modules\videoio\include;E:\opencv\opencv-4.2.0\modules\calib3d\include;E:\opencv\opencv_contrib-master\modules\cvv\include;E:\opencv\opencv_contrib-master\modules\datasets\include;E:\opencv\opencv-4.2.0\modules\highgui\include;E:\opencv\opencv-4.2.0\modules\objdetect\include;E:\opencv\opencv_contrib-master\modules\rapid\include;E:\opencv\opencv_contrib-master\modules\rgbd\include;E:\opencv\opencv_contrib-master\modules\shape\include;E:\opencv\opencv_contrib-master\modules\structured_light\include;E:\opencv\opencv-4.2.0\modules\ts\include;E:\opencv\opencv-4.2.0\modules\video\include;E:\opencv\opencv_contrib-master\modules\videostab\include;E:\opencv\opencv_contrib-master\modules\xfeatures2d\include;E:\opencv\opencv_contrib-master\modules\ximgproc\include;E:\opencv\opencv_contrib-master\modules\xobjdetect\include;E:\opencv\opencv_contrib-master\modules\aruco\include;E:\opencv\opencv_contrib-master\modules\bgsegm\include;E:\opencv\opencv_contrib-master\modules\bioinspired\include;E:\opencv\opencv_contrib-master\modules\ccalib\include;E:\opencv\opencv_contrib-master\modules\dnn_objdetect\include;E:\opencv\opencv_contrib-master\modules\dpm\include;E:\opencv\opencv_contrib-master\modules\face\include;E:\opencv\opencv_contrib-master\modules\optflow\include;E:\opencv\opencv-4.2.0\modules\stitching\include;E:\opencv\opencv_contrib-master\modules\superres\include;E:\opencv\opencv_contrib-master\modules\tracking\include;E:\opencv\opencv_contrib-master\modules\stereo\include;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtWidgets;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtANGLE;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\.\mkspecs\win32-msvc;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtOpenGL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>
+      </SuppressStartupBanner>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;QT_OPENGL_LIB;CMAKE_INTDIR="MinSizeRel";RBOT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;QT_OPENGL_LIB;CMAKE_INTDIR=\"MinSizeRel\";RBOT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\General\Документы\GitHub\RBOT\build;E:\General\Документы\GitHub\RBOT;E:\General\Документы\GitHub\RBOT\build\RBOT_autogen\include_MinSizeRel;E:\Assimp\assimp-5.0.1\include;E:\opencv\build;E:\opencv\opencv-4.2.0\include;E:\opencv\opencv-4.2.0\modules\core\include;E:\opencv\opencv-4.2.0\modules\flann\include;E:\opencv\opencv-4.2.0\modules\imgproc\include;E:\opencv\opencv_contrib-master\modules\intensity_transform\include;E:\opencv\opencv-4.2.0\modules\ml\include;E:\opencv\opencv_contrib-master\modules\phase_unwrapping\include;E:\opencv\opencv-4.2.0\modules\photo\include;E:\opencv\opencv_contrib-master\modules\plot\include;E:\opencv\opencv_contrib-master\modules\quality\include;E:\opencv\opencv_contrib-master\modules\reg\include;E:\opencv\opencv_contrib-master\modules\surface_matching\include;E:\opencv\opencv_contrib-master\modules\xphoto\include;E:\opencv\opencv-4.2.0\modules\dnn\include;E:\opencv\opencv_contrib-master\modules\dnn_superres\include;E:\opencv\opencv-4.2.0\modules\features2d\include;E:\opencv\opencv_contrib-master\modules\fuzzy\include;E:\opencv\opencv-4.2.0\modules\gapi\include;E:\opencv\opencv_contrib-master\modules\hfs\include;E:\opencv\opencv_contrib-master\modules\img_hash\include;E:\opencv\opencv-4.2.0\modules\imgcodecs\include;E:\opencv\opencv_contrib-master\modules\line_descriptor\include;E:\opencv\opencv_contrib-master\modules\saliency\include;E:\opencv\opencv_contrib-master\modules\text\include;E:\opencv\opencv-4.2.0\modules\videoio\include;E:\opencv\opencv-4.2.0\modules\calib3d\include;E:\opencv\opencv_contrib-master\modules\cvv\include;E:\opencv\opencv_contrib-master\modules\datasets\include;E:\opencv\opencv-4.2.0\modules\highgui\include;E:\opencv\opencv-4.2.0\modules\objdetect\include;E:\opencv\opencv_contrib-master\modules\rapid\include;E:\opencv\opencv_contrib-master\modules\rgbd\include;E:\opencv\opencv_contrib-master\modules\shape\include;E:\opencv\opencv_contrib-master\modules\structured_light\include;E:\opencv\opencv-4.2.0\modules\ts\include;E:\opencv\opencv-4.2.0\modules\video\include;E:\opencv\opencv_contrib-master\modules\videostab\include;E:\opencv\opencv_contrib-master\modules\xfeatures2d\include;E:\opencv\opencv_contrib-master\modules\ximgproc\include;E:\opencv\opencv_contrib-master\modules\xobjdetect\include;E:\opencv\opencv_contrib-master\modules\aruco\include;E:\opencv\opencv_contrib-master\modules\bgsegm\include;E:\opencv\opencv_contrib-master\modules\bioinspired\include;E:\opencv\opencv_contrib-master\modules\ccalib\include;E:\opencv\opencv_contrib-master\modules\dnn_objdetect\include;E:\opencv\opencv_contrib-master\modules\dpm\include;E:\opencv\opencv_contrib-master\modules\face\include;E:\opencv\opencv_contrib-master\modules\optflow\include;E:\opencv\opencv-4.2.0\modules\stitching\include;E:\opencv\opencv_contrib-master\modules\superres\include;E:\opencv\opencv_contrib-master\modules\tracking\include;E:\opencv\opencv_contrib-master\modules\stereo\include;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtWidgets;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtANGLE;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\.\mkspecs\win32-msvc;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtOpenGL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\General\Документы\GitHub\RBOT\build;E:\General\Документы\GitHub\RBOT;E:\General\Документы\GitHub\RBOT\build\RBOT_autogen\include_MinSizeRel;E:\Assimp\assimp-5.0.1\include;E:\opencv\build;E:\opencv\opencv-4.2.0\include;E:\opencv\opencv-4.2.0\modules\core\include;E:\opencv\opencv-4.2.0\modules\flann\include;E:\opencv\opencv-4.2.0\modules\imgproc\include;E:\opencv\opencv_contrib-master\modules\intensity_transform\include;E:\opencv\opencv-4.2.0\modules\ml\include;E:\opencv\opencv_contrib-master\modules\phase_unwrapping\include;E:\opencv\opencv-4.2.0\modules\photo\include;E:\opencv\opencv_contrib-master\modules\plot\include;E:\opencv\opencv_contrib-master\modules\quality\include;E:\opencv\opencv_contrib-master\modules\reg\include;E:\opencv\opencv_contrib-master\modules\surface_matching\include;E:\opencv\opencv_contrib-master\modules\xphoto\include;E:\opencv\opencv-4.2.0\modules\dnn\include;E:\opencv\opencv_contrib-master\modules\dnn_superres\include;E:\opencv\opencv-4.2.0\modules\features2d\include;E:\opencv\opencv_contrib-master\modules\fuzzy\include;E:\opencv\opencv-4.2.0\modules\gapi\include;E:\opencv\opencv_contrib-master\modules\hfs\include;E:\opencv\opencv_contrib-master\modules\img_hash\include;E:\opencv\opencv-4.2.0\modules\imgcodecs\include;E:\opencv\opencv_contrib-master\modules\line_descriptor\include;E:\opencv\opencv_contrib-master\modules\saliency\include;E:\opencv\opencv_contrib-master\modules\text\include;E:\opencv\opencv-4.2.0\modules\videoio\include;E:\opencv\opencv-4.2.0\modules\calib3d\include;E:\opencv\opencv_contrib-master\modules\cvv\include;E:\opencv\opencv_contrib-master\modules\datasets\include;E:\opencv\opencv-4.2.0\modules\highgui\include;E:\opencv\opencv-4.2.0\modules\objdetect\include;E:\opencv\opencv_contrib-master\modules\rapid\include;E:\opencv\opencv_contrib-master\modules\rgbd\include;E:\opencv\opencv_contrib-master\modules\shape\include;E:\opencv\opencv_contrib-master\modules\structured_light\include;E:\opencv\opencv-4.2.0\modules\ts\include;E:\opencv\opencv-4.2.0\modules\video\include;E:\opencv\opencv_contrib-master\modules\videostab\include;E:\opencv\opencv_contrib-master\modules\xfeatures2d\include;E:\opencv\opencv_contrib-master\modules\ximgproc\include;E:\opencv\opencv_contrib-master\modules\xobjdetect\include;E:\opencv\opencv_contrib-master\modules\aruco\include;E:\opencv\opencv_contrib-master\modules\bgsegm\include;E:\opencv\opencv_contrib-master\modules\bioinspired\include;E:\opencv\opencv_contrib-master\modules\ccalib\include;E:\opencv\opencv_contrib-master\modules\dnn_objdetect\include;E:\opencv\opencv_contrib-master\modules\dpm\include;E:\opencv\opencv_contrib-master\modules\face\include;E:\opencv\opencv_contrib-master\modules\optflow\include;E:\opencv\opencv-4.2.0\modules\stitching\include;E:\opencv\opencv_contrib-master\modules\superres\include;E:\opencv\opencv_contrib-master\modules\tracking\include;E:\opencv\opencv_contrib-master\modules\stereo\include;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtWidgets;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtANGLE;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\.\mkspecs\win32-msvc;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtOpenGL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreLinkEvent>
+      <Message>Auto build dll exports</Message>
+      <Command>setlocal
+cd E:\General\Документы\GitHub\RBOT\build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E __create_def E:/General/Документы/GitHub/RBOT/build/RBOT.dir/$(Configuration)/exports.def E:/General/Документы/GitHub/RBOT/build/RBOT.dir/MinSizeRel//objects.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreLinkEvent>
+    <PreBuildEvent>
+      <Message>Automatic MOC for target RBOT</Message>
+      <Command>setlocal
+cd E:\General\Документы\GitHub\RBOT\build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen E:/General/Документы/GitHub/RBOT/build/CMakeFiles/RBOT_autogen.dir/AutogenInfo.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>E:\opencv\build\lib\Release\opencv_gapi420.lib;E:\opencv\build\lib\Release\opencv_stitching420.lib;E:\opencv\build\lib\Release\opencv_aruco420.lib;E:\opencv\build\lib\Release\opencv_bgsegm420.lib;E:\opencv\build\lib\Release\opencv_bioinspired420.lib;E:\opencv\build\lib\Release\opencv_ccalib420.lib;E:\opencv\build\lib\Release\opencv_cvv420.lib;E:\opencv\build\lib\Release\opencv_dnn_objdetect420.lib;E:\opencv\build\lib\Release\opencv_dnn_superres420.lib;E:\opencv\build\lib\Release\opencv_dpm420.lib;E:\opencv\build\lib\Release\opencv_face420.lib;E:\opencv\build\lib\Release\opencv_fuzzy420.lib;E:\opencv\build\lib\Release\opencv_hfs420.lib;E:\opencv\build\lib\Release\opencv_img_hash420.lib;E:\opencv\build\lib\Release\opencv_intensity_transform420.lib;E:\opencv\build\lib\Release\opencv_line_descriptor420.lib;E:\opencv\build\lib\Release\opencv_quality420.lib;E:\opencv\build\lib\Release\opencv_rapid420.lib;E:\opencv\build\lib\Release\opencv_reg420.lib;E:\opencv\build\lib\Release\opencv_rgbd420.lib;E:\opencv\build\lib\Release\opencv_saliency420.lib;E:\opencv\build\lib\Release\opencv_stereo420.lib;E:\opencv\build\lib\Release\opencv_structured_light420.lib;E:\opencv\build\lib\Release\opencv_superres420.lib;E:\opencv\build\lib\Release\opencv_surface_matching420.lib;E:\opencv\build\lib\Release\opencv_tracking420.lib;E:\opencv\build\lib\Release\opencv_videostab420.lib;E:\opencv\build\lib\Release\opencv_xfeatures2d420.lib;E:\opencv\build\lib\Release\opencv_xobjdetect420.lib;E:\opencv\build\lib\Release\opencv_xphoto420.lib;opengl32.lib;glu32.lib;E:\Assimp\build\code\Release\assimp-vc141-mt.lib;E:\opencv\build\lib\Release\opencv_shape420.lib;E:\opencv\build\lib\Release\opencv_highgui420.lib;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\Qt5OpenGL.lib;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\Qt5Widgets.lib;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\Qt5Gui.lib;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\Qt5Core.lib;E:\opencv\build\lib\Release\opencv_datasets420.lib;E:\opencv\build\lib\Release\opencv_plot420.lib;E:\opencv\build\lib\Release\opencv_text420.lib;E:\opencv\build\lib\Release\opencv_dnn420.lib;E:\opencv\build\lib\Release\opencv_ml420.lib;E:\opencv\build\lib\Release\opencv_phase_unwrapping420.lib;E:\opencv\build\lib\Release\opencv_optflow420.lib;E:\opencv\build\lib\Release\opencv_ximgproc420.lib;E:\opencv\build\lib\Release\opencv_video420.lib;E:\opencv\build\lib\Release\opencv_videoio420.lib;E:\opencv\build\lib\Release\opencv_imgcodecs420.lib;E:\opencv\build\lib\Release\opencv_objdetect420.lib;E:\opencv\build\lib\Release\opencv_calib3d420.lib;E:\opencv\build\lib\Release\opencv_features2d420.lib;E:\opencv\build\lib\Release\opencv_flann420.lib;E:\opencv\build\lib\Release\opencv_photo420.lib;E:\opencv\build\lib\Release\opencv_imgproc420.lib;E:\opencv\build\lib\Release\opencv_core420.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/General/Документы/GitHub/RBOT/build/bin/MinSizeRel/RBOT.lib</ImportLibrary>
+      <ModuleDefinitionFile>E:/General/Документы/GitHub/RBOT/build/RBOT.dir/$(Configuration)/exports.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>E:/General/Документы/GitHub/RBOT/build/bin/MinSizeRel/RBOT.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\General\Документы\GitHub\RBOT\build;E:\General\Документы\GitHub\RBOT;E:\General\Документы\GitHub\RBOT\build\RBOT_autogen\include_RelWithDebInfo;E:\Assimp\assimp-5.0.1\include;E:\opencv\build;E:\opencv\opencv-4.2.0\include;E:\opencv\opencv-4.2.0\modules\core\include;E:\opencv\opencv-4.2.0\modules\flann\include;E:\opencv\opencv-4.2.0\modules\imgproc\include;E:\opencv\opencv_contrib-master\modules\intensity_transform\include;E:\opencv\opencv-4.2.0\modules\ml\include;E:\opencv\opencv_contrib-master\modules\phase_unwrapping\include;E:\opencv\opencv-4.2.0\modules\photo\include;E:\opencv\opencv_contrib-master\modules\plot\include;E:\opencv\opencv_contrib-master\modules\quality\include;E:\opencv\opencv_contrib-master\modules\reg\include;E:\opencv\opencv_contrib-master\modules\surface_matching\include;E:\opencv\opencv_contrib-master\modules\xphoto\include;E:\opencv\opencv-4.2.0\modules\dnn\include;E:\opencv\opencv_contrib-master\modules\dnn_superres\include;E:\opencv\opencv-4.2.0\modules\features2d\include;E:\opencv\opencv_contrib-master\modules\fuzzy\include;E:\opencv\opencv-4.2.0\modules\gapi\include;E:\opencv\opencv_contrib-master\modules\hfs\include;E:\opencv\opencv_contrib-master\modules\img_hash\include;E:\opencv\opencv-4.2.0\modules\imgcodecs\include;E:\opencv\opencv_contrib-master\modules\line_descriptor\include;E:\opencv\opencv_contrib-master\modules\saliency\include;E:\opencv\opencv_contrib-master\modules\text\include;E:\opencv\opencv-4.2.0\modules\videoio\include;E:\opencv\opencv-4.2.0\modules\calib3d\include;E:\opencv\opencv_contrib-master\modules\cvv\include;E:\opencv\opencv_contrib-master\modules\datasets\include;E:\opencv\opencv-4.2.0\modules\highgui\include;E:\opencv\opencv-4.2.0\modules\objdetect\include;E:\opencv\opencv_contrib-master\modules\rapid\include;E:\opencv\opencv_contrib-master\modules\rgbd\include;E:\opencv\opencv_contrib-master\modules\shape\include;E:\opencv\opencv_contrib-master\modules\structured_light\include;E:\opencv\opencv-4.2.0\modules\ts\include;E:\opencv\opencv-4.2.0\modules\video\include;E:\opencv\opencv_contrib-master\modules\videostab\include;E:\opencv\opencv_contrib-master\modules\xfeatures2d\include;E:\opencv\opencv_contrib-master\modules\ximgproc\include;E:\opencv\opencv_contrib-master\modules\xobjdetect\include;E:\opencv\opencv_contrib-master\modules\aruco\include;E:\opencv\opencv_contrib-master\modules\bgsegm\include;E:\opencv\opencv_contrib-master\modules\bioinspired\include;E:\opencv\opencv_contrib-master\modules\ccalib\include;E:\opencv\opencv_contrib-master\modules\dnn_objdetect\include;E:\opencv\opencv_contrib-master\modules\dpm\include;E:\opencv\opencv_contrib-master\modules\face\include;E:\opencv\opencv_contrib-master\modules\optflow\include;E:\opencv\opencv-4.2.0\modules\stitching\include;E:\opencv\opencv_contrib-master\modules\superres\include;E:\opencv\opencv_contrib-master\modules\tracking\include;E:\opencv\opencv_contrib-master\modules\stereo\include;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtWidgets;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtANGLE;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\.\mkspecs\win32-msvc;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtOpenGL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>
+      </SuppressStartupBanner>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;QT_OPENGL_LIB;CMAKE_INTDIR="RelWithDebInfo";RBOT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;QT_OPENGL_LIB;CMAKE_INTDIR=\"RelWithDebInfo\";RBOT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\General\Документы\GitHub\RBOT\build;E:\General\Документы\GitHub\RBOT;E:\General\Документы\GitHub\RBOT\build\RBOT_autogen\include_RelWithDebInfo;E:\Assimp\assimp-5.0.1\include;E:\opencv\build;E:\opencv\opencv-4.2.0\include;E:\opencv\opencv-4.2.0\modules\core\include;E:\opencv\opencv-4.2.0\modules\flann\include;E:\opencv\opencv-4.2.0\modules\imgproc\include;E:\opencv\opencv_contrib-master\modules\intensity_transform\include;E:\opencv\opencv-4.2.0\modules\ml\include;E:\opencv\opencv_contrib-master\modules\phase_unwrapping\include;E:\opencv\opencv-4.2.0\modules\photo\include;E:\opencv\opencv_contrib-master\modules\plot\include;E:\opencv\opencv_contrib-master\modules\quality\include;E:\opencv\opencv_contrib-master\modules\reg\include;E:\opencv\opencv_contrib-master\modules\surface_matching\include;E:\opencv\opencv_contrib-master\modules\xphoto\include;E:\opencv\opencv-4.2.0\modules\dnn\include;E:\opencv\opencv_contrib-master\modules\dnn_superres\include;E:\opencv\opencv-4.2.0\modules\features2d\include;E:\opencv\opencv_contrib-master\modules\fuzzy\include;E:\opencv\opencv-4.2.0\modules\gapi\include;E:\opencv\opencv_contrib-master\modules\hfs\include;E:\opencv\opencv_contrib-master\modules\img_hash\include;E:\opencv\opencv-4.2.0\modules\imgcodecs\include;E:\opencv\opencv_contrib-master\modules\line_descriptor\include;E:\opencv\opencv_contrib-master\modules\saliency\include;E:\opencv\opencv_contrib-master\modules\text\include;E:\opencv\opencv-4.2.0\modules\videoio\include;E:\opencv\opencv-4.2.0\modules\calib3d\include;E:\opencv\opencv_contrib-master\modules\cvv\include;E:\opencv\opencv_contrib-master\modules\datasets\include;E:\opencv\opencv-4.2.0\modules\highgui\include;E:\opencv\opencv-4.2.0\modules\objdetect\include;E:\opencv\opencv_contrib-master\modules\rapid\include;E:\opencv\opencv_contrib-master\modules\rgbd\include;E:\opencv\opencv_contrib-master\modules\shape\include;E:\opencv\opencv_contrib-master\modules\structured_light\include;E:\opencv\opencv-4.2.0\modules\ts\include;E:\opencv\opencv-4.2.0\modules\video\include;E:\opencv\opencv_contrib-master\modules\videostab\include;E:\opencv\opencv_contrib-master\modules\xfeatures2d\include;E:\opencv\opencv_contrib-master\modules\ximgproc\include;E:\opencv\opencv_contrib-master\modules\xobjdetect\include;E:\opencv\opencv_contrib-master\modules\aruco\include;E:\opencv\opencv_contrib-master\modules\bgsegm\include;E:\opencv\opencv_contrib-master\modules\bioinspired\include;E:\opencv\opencv_contrib-master\modules\ccalib\include;E:\opencv\opencv_contrib-master\modules\dnn_objdetect\include;E:\opencv\opencv_contrib-master\modules\dpm\include;E:\opencv\opencv_contrib-master\modules\face\include;E:\opencv\opencv_contrib-master\modules\optflow\include;E:\opencv\opencv-4.2.0\modules\stitching\include;E:\opencv\opencv_contrib-master\modules\superres\include;E:\opencv\opencv_contrib-master\modules\tracking\include;E:\opencv\opencv_contrib-master\modules\stereo\include;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtWidgets;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtANGLE;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\.\mkspecs\win32-msvc;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtOpenGL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\General\Документы\GitHub\RBOT\build;E:\General\Документы\GitHub\RBOT;E:\General\Документы\GitHub\RBOT\build\RBOT_autogen\include_RelWithDebInfo;E:\Assimp\assimp-5.0.1\include;E:\opencv\build;E:\opencv\opencv-4.2.0\include;E:\opencv\opencv-4.2.0\modules\core\include;E:\opencv\opencv-4.2.0\modules\flann\include;E:\opencv\opencv-4.2.0\modules\imgproc\include;E:\opencv\opencv_contrib-master\modules\intensity_transform\include;E:\opencv\opencv-4.2.0\modules\ml\include;E:\opencv\opencv_contrib-master\modules\phase_unwrapping\include;E:\opencv\opencv-4.2.0\modules\photo\include;E:\opencv\opencv_contrib-master\modules\plot\include;E:\opencv\opencv_contrib-master\modules\quality\include;E:\opencv\opencv_contrib-master\modules\reg\include;E:\opencv\opencv_contrib-master\modules\surface_matching\include;E:\opencv\opencv_contrib-master\modules\xphoto\include;E:\opencv\opencv-4.2.0\modules\dnn\include;E:\opencv\opencv_contrib-master\modules\dnn_superres\include;E:\opencv\opencv-4.2.0\modules\features2d\include;E:\opencv\opencv_contrib-master\modules\fuzzy\include;E:\opencv\opencv-4.2.0\modules\gapi\include;E:\opencv\opencv_contrib-master\modules\hfs\include;E:\opencv\opencv_contrib-master\modules\img_hash\include;E:\opencv\opencv-4.2.0\modules\imgcodecs\include;E:\opencv\opencv_contrib-master\modules\line_descriptor\include;E:\opencv\opencv_contrib-master\modules\saliency\include;E:\opencv\opencv_contrib-master\modules\text\include;E:\opencv\opencv-4.2.0\modules\videoio\include;E:\opencv\opencv-4.2.0\modules\calib3d\include;E:\opencv\opencv_contrib-master\modules\cvv\include;E:\opencv\opencv_contrib-master\modules\datasets\include;E:\opencv\opencv-4.2.0\modules\highgui\include;E:\opencv\opencv-4.2.0\modules\objdetect\include;E:\opencv\opencv_contrib-master\modules\rapid\include;E:\opencv\opencv_contrib-master\modules\rgbd\include;E:\opencv\opencv_contrib-master\modules\shape\include;E:\opencv\opencv_contrib-master\modules\structured_light\include;E:\opencv\opencv-4.2.0\modules\ts\include;E:\opencv\opencv-4.2.0\modules\video\include;E:\opencv\opencv_contrib-master\modules\videostab\include;E:\opencv\opencv_contrib-master\modules\xfeatures2d\include;E:\opencv\opencv_contrib-master\modules\ximgproc\include;E:\opencv\opencv_contrib-master\modules\xobjdetect\include;E:\opencv\opencv_contrib-master\modules\aruco\include;E:\opencv\opencv_contrib-master\modules\bgsegm\include;E:\opencv\opencv_contrib-master\modules\bioinspired\include;E:\opencv\opencv_contrib-master\modules\ccalib\include;E:\opencv\opencv_contrib-master\modules\dnn_objdetect\include;E:\opencv\opencv_contrib-master\modules\dpm\include;E:\opencv\opencv_contrib-master\modules\face\include;E:\opencv\opencv_contrib-master\modules\optflow\include;E:\opencv\opencv-4.2.0\modules\stitching\include;E:\opencv\opencv_contrib-master\modules\superres\include;E:\opencv\opencv_contrib-master\modules\tracking\include;E:\opencv\opencv_contrib-master\modules\stereo\include;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtWidgets;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtANGLE;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\.\mkspecs\win32-msvc;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtOpenGL;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreLinkEvent>
+      <Message>Auto build dll exports</Message>
+      <Command>setlocal
+cd E:\General\Документы\GitHub\RBOT\build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E __create_def E:/General/Документы/GitHub/RBOT/build/RBOT.dir/$(Configuration)/exports.def E:/General/Документы/GitHub/RBOT/build/RBOT.dir/RelWithDebInfo//objects.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreLinkEvent>
+    <PreBuildEvent>
+      <Message>Automatic MOC for target RBOT</Message>
+      <Command>setlocal
+cd E:\General\Документы\GitHub\RBOT\build
+if %errorlevel% neq 0 goto :cmEnd
+E:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen E:/General/Документы/GitHub/RBOT/build/CMakeFiles/RBOT_autogen.dir/AutogenInfo.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>E:\opencv\build\lib\Release\opencv_gapi420.lib;E:\opencv\build\lib\Release\opencv_stitching420.lib;E:\opencv\build\lib\Release\opencv_aruco420.lib;E:\opencv\build\lib\Release\opencv_bgsegm420.lib;E:\opencv\build\lib\Release\opencv_bioinspired420.lib;E:\opencv\build\lib\Release\opencv_ccalib420.lib;E:\opencv\build\lib\Release\opencv_cvv420.lib;E:\opencv\build\lib\Release\opencv_dnn_objdetect420.lib;E:\opencv\build\lib\Release\opencv_dnn_superres420.lib;E:\opencv\build\lib\Release\opencv_dpm420.lib;E:\opencv\build\lib\Release\opencv_face420.lib;E:\opencv\build\lib\Release\opencv_fuzzy420.lib;E:\opencv\build\lib\Release\opencv_hfs420.lib;E:\opencv\build\lib\Release\opencv_img_hash420.lib;E:\opencv\build\lib\Release\opencv_intensity_transform420.lib;E:\opencv\build\lib\Release\opencv_line_descriptor420.lib;E:\opencv\build\lib\Release\opencv_quality420.lib;E:\opencv\build\lib\Release\opencv_rapid420.lib;E:\opencv\build\lib\Release\opencv_reg420.lib;E:\opencv\build\lib\Release\opencv_rgbd420.lib;E:\opencv\build\lib\Release\opencv_saliency420.lib;E:\opencv\build\lib\Release\opencv_stereo420.lib;E:\opencv\build\lib\Release\opencv_structured_light420.lib;E:\opencv\build\lib\Release\opencv_superres420.lib;E:\opencv\build\lib\Release\opencv_surface_matching420.lib;E:\opencv\build\lib\Release\opencv_tracking420.lib;E:\opencv\build\lib\Release\opencv_videostab420.lib;E:\opencv\build\lib\Release\opencv_xfeatures2d420.lib;E:\opencv\build\lib\Release\opencv_xobjdetect420.lib;E:\opencv\build\lib\Release\opencv_xphoto420.lib;opengl32.lib;glu32.lib;E:\Assimp\build\code\Release\assimp-vc141-mt.lib;E:\opencv\build\lib\Release\opencv_shape420.lib;E:\opencv\build\lib\Release\opencv_highgui420.lib;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\Qt5OpenGL.lib;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\Qt5Widgets.lib;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\Qt5Gui.lib;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\Qt5Core.lib;E:\opencv\build\lib\Release\opencv_datasets420.lib;E:\opencv\build\lib\Release\opencv_plot420.lib;E:\opencv\build\lib\Release\opencv_text420.lib;E:\opencv\build\lib\Release\opencv_dnn420.lib;E:\opencv\build\lib\Release\opencv_ml420.lib;E:\opencv\build\lib\Release\opencv_phase_unwrapping420.lib;E:\opencv\build\lib\Release\opencv_optflow420.lib;E:\opencv\build\lib\Release\opencv_ximgproc420.lib;E:\opencv\build\lib\Release\opencv_video420.lib;E:\opencv\build\lib\Release\opencv_videoio420.lib;E:\opencv\build\lib\Release\opencv_imgcodecs420.lib;E:\opencv\build\lib\Release\opencv_objdetect420.lib;E:\opencv\build\lib\Release\opencv_calib3d420.lib;E:\opencv\build\lib\Release\opencv_features2d420.lib;E:\opencv\build\lib\Release\opencv_flann420.lib;E:\opencv\build\lib\Release\opencv_photo420.lib;E:\opencv\build\lib\Release\opencv_imgproc420.lib;E:\opencv\build\lib\Release\opencv_core420.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/General/Документы/GitHub/RBOT/build/bin/RelWithDebInfo/RBOT.lib</ImportLibrary>
+      <ModuleDefinitionFile>E:/General/Документы/GitHub/RBOT/build/RBOT.dir/$(Configuration)/exports.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>E:/General/Документы/GitHub/RBOT/build/bin/RelWithDebInfo/RBOT.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\General\Документы\GitHub\RBOT\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/General/Документы/GitHub/RBOT/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/General/Документы/GitHub/RBOT -BE:/General/Документы/GitHub/RBOT/build --check-stamp-file E:/General/Документы/GitHub/RBOT/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake;E:\General\Документы\GitHub\RBOT\build\CMakeFiles\3.17.0-rc2\CMakeCCompiler.cmake;E:\General\Документы\GitHub\RBOT\build\CMakeFiles\3.17.0-rc2\CMakeCXXCompiler.cmake;E:\General\Документы\GitHub\RBOT\build\CMakeFiles\3.17.0-rc2\CMakeRCCompiler.cmake;E:\General\Документы\GitHub\RBOT\build\CMakeFiles\3.17.0-rc2\CMakeSystem.cmake;E:\General\Документы\GitHub\RBOT\cmake_modules\FindASSIMP.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgIconPlugin.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgPlugin.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QXdgDesktopPortalThemePlugin.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfig.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfigVersion.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Widgets\Qt5Widgets_QWindowsVistaStylePlugin.cmake;E:\opencv\build\OpenCVConfig-version.cmake;E:\opencv\build\OpenCVConfig.cmake;E:\opencv\build\OpenCVModules.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\General\Документы\GitHub\RBOT\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/General/Документы/GitHub/RBOT/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/General/Документы/GitHub/RBOT -BE:/General/Документы/GitHub/RBOT/build --check-stamp-file E:/General/Документы/GitHub/RBOT/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake;E:\General\Документы\GitHub\RBOT\build\CMakeFiles\3.17.0-rc2\CMakeCCompiler.cmake;E:\General\Документы\GitHub\RBOT\build\CMakeFiles\3.17.0-rc2\CMakeCXXCompiler.cmake;E:\General\Документы\GitHub\RBOT\build\CMakeFiles\3.17.0-rc2\CMakeRCCompiler.cmake;E:\General\Документы\GitHub\RBOT\build\CMakeFiles\3.17.0-rc2\CMakeSystem.cmake;E:\General\Документы\GitHub\RBOT\cmake_modules\FindASSIMP.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgIconPlugin.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgPlugin.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QXdgDesktopPortalThemePlugin.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfig.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfigVersion.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Widgets\Qt5Widgets_QWindowsVistaStylePlugin.cmake;E:\opencv\build\OpenCVConfig-version.cmake;E:\opencv\build\OpenCVConfig.cmake;E:\opencv\build\OpenCVModules.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\General\Документы\GitHub\RBOT\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/General/Документы/GitHub/RBOT/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/General/Документы/GitHub/RBOT -BE:/General/Документы/GitHub/RBOT/build --check-stamp-file E:/General/Документы/GitHub/RBOT/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake;E:\General\Документы\GitHub\RBOT\build\CMakeFiles\3.17.0-rc2\CMakeCCompiler.cmake;E:\General\Документы\GitHub\RBOT\build\CMakeFiles\3.17.0-rc2\CMakeCXXCompiler.cmake;E:\General\Документы\GitHub\RBOT\build\CMakeFiles\3.17.0-rc2\CMakeRCCompiler.cmake;E:\General\Документы\GitHub\RBOT\build\CMakeFiles\3.17.0-rc2\CMakeSystem.cmake;E:\General\Документы\GitHub\RBOT\cmake_modules\FindASSIMP.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgIconPlugin.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgPlugin.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QXdgDesktopPortalThemePlugin.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfig.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfigVersion.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Widgets\Qt5Widgets_QWindowsVistaStylePlugin.cmake;E:\opencv\build\OpenCVConfig-version.cmake;E:\opencv\build\OpenCVConfig.cmake;E:\opencv\build\OpenCVModules.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\General\Документы\GitHub\RBOT\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/General/Документы/GitHub/RBOT/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/General/Документы/GitHub/RBOT -BE:/General/Документы/GitHub/RBOT/build --check-stamp-file E:/General/Документы/GitHub/RBOT/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\Platform\WindowsPaths.cmake;E:\General\Документы\GitHub\RBOT\build\CMakeFiles\3.17.0-rc2\CMakeCCompiler.cmake;E:\General\Документы\GitHub\RBOT\build\CMakeFiles\3.17.0-rc2\CMakeCXXCompiler.cmake;E:\General\Документы\GitHub\RBOT\build\CMakeFiles\3.17.0-rc2\CMakeRCCompiler.cmake;E:\General\Документы\GitHub\RBOT\build\CMakeFiles\3.17.0-rc2\CMakeSystem.cmake;E:\General\Документы\GitHub\RBOT\cmake_modules\FindASSIMP.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgIconPlugin.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgPlugin.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QXdgDesktopPortalThemePlugin.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfig.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfigVersion.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;E:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\cmake\Qt5Widgets\Qt5Widgets_QWindowsVistaStylePlugin.cmake;E:\opencv\build\OpenCVConfig-version.cmake;E:\opencv\build\OpenCVConfig.cmake;E:\opencv\build\OpenCVModules.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\General\Документы\GitHub\RBOT\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="E:\General\Документы\GitHub\RBOT\build\RBOT_autogen\mocs_compilation.cpp" />
+    <ClCompile Include="E:\General\Документы\GitHub\RBOT\src\main.cpp" />
+    <ClCompile Include="E:\General\Документы\GitHub\RBOT\src\model.cpp" />
+    <ClInclude Include="E:\General\Документы\GitHub\RBOT\src\model.h" />
+    <None Include="E:\General\Документы\GitHub\RBOT\src\normals_fragment_shader.glsl" />
+    <None Include="E:\General\Документы\GitHub\RBOT\src\normals_vertex_shader.glsl" />
+    <ClCompile Include="E:\General\Документы\GitHub\RBOT\src\object3d.cpp" />
+    <ClInclude Include="E:\General\Документы\GitHub\RBOT\src\object3d.h" />
+    <ClCompile Include="E:\General\Документы\GitHub\RBOT\src\optimization_engine.cpp" />
+    <ClInclude Include="E:\General\Документы\GitHub\RBOT\src\optimization_engine.h" />
+    <None Include="E:\General\Документы\GitHub\RBOT\src\phongblinn_fragment_shader.glsl" />
+    <None Include="E:\General\Документы\GitHub\RBOT\src\phongblinn_vertex_shader.glsl" />
+    <ClCompile Include="E:\General\Документы\GitHub\RBOT\src\pose_estimator6d.cpp" />
+    <ClInclude Include="E:\General\Документы\GitHub\RBOT\src\pose_estimator6d.h" />
+    <ClCompile Include="E:\General\Документы\GitHub\RBOT\src\rendering_engine.cpp" />
+    <ClInclude Include="E:\General\Документы\GitHub\RBOT\src\rendering_engine.h" />
+    <ClCompile Include="E:\General\Документы\GitHub\RBOT\src\signed_distance_transform2d.cpp" />
+    <ClInclude Include="E:\General\Документы\GitHub\RBOT\src\signed_distance_transform2d.h" />
+    <None Include="E:\General\Документы\GitHub\RBOT\src\silhouette_fragment_shader.glsl" />
+    <None Include="E:\General\Документы\GitHub\RBOT\src\silhouette_vertex_shader.glsl" />
+    <ClCompile Include="E:\General\Документы\GitHub\RBOT\src\tclc_histograms.cpp" />
+    <ClInclude Include="E:\General\Документы\GitHub\RBOT\src\tclc_histograms.h" />
+    <ClCompile Include="E:\General\Документы\GitHub\RBOT\src\template_view.cpp" />
+    <ClInclude Include="E:\General\Документы\GitHub\RBOT\src\template_view.h" />
+    <ClCompile Include="E:\General\Документы\GitHub\RBOT\src\transformations.cpp" />
+    <ClInclude Include="E:\General\Документы\GitHub\RBOT\src\transformations.h" />
+    <ClCompile Include="E:\General\Документы\GitHub\RBOT\src\unity_interface.cpp" />
+    <ClInclude Include="E:\General\Документы\GitHub\RBOT\src\unity_interface.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\General\Документы\GitHub\RBOT\build\ZERO_CHECK.vcxproj">
+      <Project>{C6BAEFB9-D490-35C2-8F07-D5F5042B67BD}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

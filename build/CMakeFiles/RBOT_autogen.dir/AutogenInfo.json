@@ -1,0 +1,224 @@
+{
+	"BUILD_DIR" : "E:/General/Документы/GitHub/RBOT/build/RBOT_autogen",
+	"CMAKE_BINARY_DIR" : "E:/General/Документы/GitHub/RBOT/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "E:/General/Документы/GitHub/RBOT/build",
+	"CMAKE_CURRENT_SOURCE_DIR" : "E:/General/Документы/GitHub/RBOT",
+	"CMAKE_EXECUTABLE" : "C:/Program Files/CMake/bin/cmake.exe",
+	"CMAKE_SOURCE_DIR" : "E:/General/Документы/GitHub/RBOT",
+	"DEP_FILE" : "",
+	"DEP_FILE_RULE_NAME" : "",
+	"HEADERS" : 
+	[
+		[
+			"E:/General/Документы/GitHub/RBOT/src/model.h",
+			"Mu",
+			"UVLADIE3JM/moc_model.cpp"
+		],
+		[
+			"E:/General/Документы/GitHub/RBOT/src/object3d.h",
+			"Mu",
+			"UVLADIE3JM/moc_object3d.cpp"
+		],
+		[
+			"E:/General/Документы/GitHub/RBOT/src/optimization_engine.h",
+			"Mu",
+			"UVLADIE3JM/moc_optimization_engine.cpp"
+		],
+		[
+			"E:/General/Документы/GitHub/RBOT/src/pose_estimator6d.h",
+			"Mu",
+			"UVLADIE3JM/moc_pose_estimator6d.cpp"
+		],
+		[
+			"E:/General/Документы/GitHub/RBOT/src/rendering_engine.h",
+			"Mu",
+			"UVLADIE3JM/moc_rendering_engine.cpp"
+		],
+		[
+			"E:/General/Документы/GitHub/RBOT/src/signed_distance_transform2d.h",
+			"Mu",
+			"UVLADIE3JM/moc_signed_distance_transform2d.cpp"
+		],
+		[
+			"E:/General/Документы/GitHub/RBOT/src/tclc_histograms.h",
+			"Mu",
+			"UVLADIE3JM/moc_tclc_histograms.cpp"
+		],
+		[
+			"E:/General/Документы/GitHub/RBOT/src/template_view.h",
+			"Mu",
+			"UVLADIE3JM/moc_template_view.cpp"
+		],
+		[
+			"E:/General/Документы/GitHub/RBOT/src/transformations.h",
+			"Mu",
+			"UVLADIE3JM/moc_transformations.cpp"
+		],
+		[
+			"E:/General/Документы/GitHub/RBOT/src/unity_interface.h",
+			"Mu",
+			"UVLADIE3JM/moc_unity_interface.cpp"
+		]
+	],
+	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
+	"INCLUDE_DIR" : "E:/General/Документы/GitHub/RBOT/build/RBOT_autogen/include",
+	"INCLUDE_DIR_Debug" : "E:/General/Документы/GitHub/RBOT/build/RBOT_autogen/include_Debug",
+	"INCLUDE_DIR_MinSizeRel" : "E:/General/Документы/GitHub/RBOT/build/RBOT_autogen/include_MinSizeRel",
+	"INCLUDE_DIR_RelWithDebInfo" : "E:/General/Документы/GitHub/RBOT/build/RBOT_autogen/include_RelWithDebInfo",
+	"INCLUDE_DIR_Release" : "E:/General/Документы/GitHub/RBOT/build/RBOT_autogen/include_Release",
+	"MOC_COMPILATION_FILE" : "E:/General/Документы/GitHub/RBOT/build/RBOT_autogen/mocs_compilation.cpp",
+	"MOC_DEFINITIONS" : 
+	[
+		"QT_CORE_LIB",
+		"QT_GUI_LIB",
+		"QT_NO_DEBUG",
+		"QT_OPENGL_LIB",
+		"QT_WIDGETS_LIB",
+		"RBOT_EXPORTS",
+		"WIN32"
+	],
+	"MOC_DEFINITIONS_Debug" : 
+	[
+		"QT_CORE_LIB",
+		"QT_GUI_LIB",
+		"QT_OPENGL_LIB",
+		"QT_WIDGETS_LIB",
+		"RBOT_EXPORTS",
+		"WIN32"
+	],
+	"MOC_DEPEND_FILTERS" : 
+	[
+		[
+			"Q_PLUGIN_METADATA",
+			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
+		]
+	],
+	"MOC_INCLUDES" : 
+	[
+		"E:/General/Документы/GitHub/RBOT/build",
+		"E:/General/Документы/GitHub/RBOT",
+		"E:/Assimp/assimp-5.0.1/include",
+		"E:/opencv/build",
+		"E:/opencv/opencv-4.2.0/include",
+		"E:/opencv/opencv-4.2.0/modules/core/include",
+		"E:/opencv/opencv-4.2.0/modules/flann/include",
+		"E:/opencv/opencv-4.2.0/modules/imgproc/include",
+		"E:/opencv/opencv_contrib-master/modules/intensity_transform/include",
+		"E:/opencv/opencv-4.2.0/modules/ml/include",
+		"E:/opencv/opencv_contrib-master/modules/phase_unwrapping/include",
+		"E:/opencv/opencv-4.2.0/modules/photo/include",
+		"E:/opencv/opencv_contrib-master/modules/plot/include",
+		"E:/opencv/opencv_contrib-master/modules/quality/include",
+		"E:/opencv/opencv_contrib-master/modules/reg/include",
+		"E:/opencv/opencv_contrib-master/modules/surface_matching/include",
+		"E:/opencv/opencv_contrib-master/modules/xphoto/include",
+		"E:/opencv/opencv-4.2.0/modules/dnn/include",
+		"E:/opencv/opencv_contrib-master/modules/dnn_superres/include",
+		"E:/opencv/opencv-4.2.0/modules/features2d/include",
+		"E:/opencv/opencv_contrib-master/modules/fuzzy/include",
+		"E:/opencv/opencv-4.2.0/modules/gapi/include",
+		"E:/opencv/opencv_contrib-master/modules/hfs/include",
+		"E:/opencv/opencv_contrib-master/modules/img_hash/include",
+		"E:/opencv/opencv-4.2.0/modules/imgcodecs/include",
+		"E:/opencv/opencv_contrib-master/modules/line_descriptor/include",
+		"E:/opencv/opencv_contrib-master/modules/saliency/include",
+		"E:/opencv/opencv_contrib-master/modules/text/include",
+		"E:/opencv/opencv-4.2.0/modules/videoio/include",
+		"E:/opencv/opencv-4.2.0/modules/calib3d/include",
+		"E:/opencv/opencv_contrib-master/modules/cvv/include",
+		"E:/opencv/opencv_contrib-master/modules/datasets/include",
+		"E:/opencv/opencv-4.2.0/modules/highgui/include",
+		"E:/opencv/opencv-4.2.0/modules/objdetect/include",
+		"E:/opencv/opencv_contrib-master/modules/rapid/include",
+		"E:/opencv/opencv_contrib-master/modules/rgbd/include",
+		"E:/opencv/opencv_contrib-master/modules/shape/include",
+		"E:/opencv/opencv_contrib-master/modules/structured_light/include",
+		"E:/opencv/opencv-4.2.0/modules/ts/include",
+		"E:/opencv/opencv-4.2.0/modules/video/include",
+		"E:/opencv/opencv_contrib-master/modules/videostab/include",
+		"E:/opencv/opencv_contrib-master/modules/xfeatures2d/include",
+		"E:/opencv/opencv_contrib-master/modules/ximgproc/include",
+		"E:/opencv/opencv_contrib-master/modules/xobjdetect/include",
+		"E:/opencv/opencv_contrib-master/modules/aruco/include",
+		"E:/opencv/opencv_contrib-master/modules/bgsegm/include",
+		"E:/opencv/opencv_contrib-master/modules/bioinspired/include",
+		"E:/opencv/opencv_contrib-master/modules/ccalib/include",
+		"E:/opencv/opencv_contrib-master/modules/dnn_objdetect/include",
+		"E:/opencv/opencv_contrib-master/modules/dpm/include",
+		"E:/opencv/opencv_contrib-master/modules/face/include",
+		"E:/opencv/opencv_contrib-master/modules/optflow/include",
+		"E:/opencv/opencv-4.2.0/modules/stitching/include",
+		"E:/opencv/opencv_contrib-master/modules/superres/include",
+		"E:/opencv/opencv_contrib-master/modules/tracking/include",
+		"E:/opencv/opencv_contrib-master/modules/stereo/include",
+		"E:/Qt/Qt5.14.2/5.14.2/msvc2017_64/include",
+		"E:/Qt/Qt5.14.2/5.14.2/msvc2017_64/include/QtWidgets",
+		"E:/Qt/Qt5.14.2/5.14.2/msvc2017_64/include/QtGui",
+		"E:/Qt/Qt5.14.2/5.14.2/msvc2017_64/include/QtANGLE",
+		"E:/Qt/Qt5.14.2/5.14.2/msvc2017_64/include/QtCore",
+		"E:/Qt/Qt5.14.2/5.14.2/msvc2017_64/mkspecs/win32-msvc",
+		"E:/Qt/Qt5.14.2/5.14.2/msvc2017_64/include/QtOpenGL"
+	],
+	"MOC_MACRO_NAMES" : [ "Q_OBJECT", "Q_GADGET", "Q_NAMESPACE", "Q_NAMESPACE_EXPORT" ],
+	"MOC_OPTIONS" : [],
+	"MOC_PATH_PREFIX" : true,
+	"MOC_PREDEFS_CMD" : [],
+	"MOC_PREDEFS_FILE" : "",
+	"MOC_RELAXED_MODE" : false,
+	"MOC_SKIP" : [],
+	"MULTI_CONFIG" : true,
+	"PARALLEL" : 4,
+	"PARSE_CACHE_FILE" : "E:/General/Документы/GitHub/RBOT/build/CMakeFiles/RBOT_autogen.dir/ParseCache.txt",
+	"PARSE_CACHE_FILE_Debug" : "E:/General/Документы/GitHub/RBOT/build/CMakeFiles/RBOT_autogen.dir/ParseCache_Debug.txt",
+	"PARSE_CACHE_FILE_MinSizeRel" : "E:/General/Документы/GitHub/RBOT/build/CMakeFiles/RBOT_autogen.dir/ParseCache_MinSizeRel.txt",
+	"PARSE_CACHE_FILE_RelWithDebInfo" : "E:/General/Документы/GitHub/RBOT/build/CMakeFiles/RBOT_autogen.dir/ParseCache_RelWithDebInfo.txt",
+	"PARSE_CACHE_FILE_Release" : "E:/General/Документы/GitHub/RBOT/build/CMakeFiles/RBOT_autogen.dir/ParseCache_Release.txt",
+	"QT_MOC_EXECUTABLE" : "E:/Qt/Qt5.14.2/5.14.2/msvc2017_64/bin/moc.exe",
+	"QT_UIC_EXECUTABLE" : "",
+	"QT_VERSION_MAJOR" : 5,
+	"QT_VERSION_MINOR" : 14,
+	"SETTINGS_FILE" : "E:/General/Документы/GitHub/RBOT/build/CMakeFiles/RBOT_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE_Debug" : "E:/General/Документы/GitHub/RBOT/build/CMakeFiles/RBOT_autogen.dir/AutogenUsed_Debug.txt",
+	"SETTINGS_FILE_MinSizeRel" : "E:/General/Документы/GitHub/RBOT/build/CMakeFiles/RBOT_autogen.dir/AutogenUsed_MinSizeRel.txt",
+	"SETTINGS_FILE_RelWithDebInfo" : "E:/General/Документы/GitHub/RBOT/build/CMakeFiles/RBOT_autogen.dir/AutogenUsed_RelWithDebInfo.txt",
+	"SETTINGS_FILE_Release" : "E:/General/Документы/GitHub/RBOT/build/CMakeFiles/RBOT_autogen.dir/AutogenUsed_Release.txt",
+	"SOURCES" : 
+	[
+		[ "E:/General/Документы/GitHub/RBOT/src/main.cpp", "Mu" ],
+		[ "E:/General/Документы/GitHub/RBOT/src/model.cpp", "Mu" ],
+		[ "E:/General/Документы/GitHub/RBOT/src/object3d.cpp", "Mu" ],
+		[
+			"E:/General/Документы/GitHub/RBOT/src/optimization_engine.cpp",
+			"Mu"
+		],
+		[
+			"E:/General/Документы/GitHub/RBOT/src/pose_estimator6d.cpp",
+			"Mu"
+		],
+		[
+			"E:/General/Документы/GitHub/RBOT/src/rendering_engine.cpp",
+			"Mu"
+		],
+		[
+			"E:/General/Документы/GitHub/RBOT/src/signed_distance_transform2d.cpp",
+			"Mu"
+		],
+		[
+			"E:/General/Документы/GitHub/RBOT/src/tclc_histograms.cpp",
+			"Mu"
+		],
+		[
+			"E:/General/Документы/GitHub/RBOT/src/template_view.cpp",
+			"Mu"
+		],
+		[
+			"E:/General/Документы/GitHub/RBOT/src/transformations.cpp",
+			"Mu"
+		],
+		[
+			"E:/General/Документы/GitHub/RBOT/src/unity_interface.cpp",
+			"Mu"
+		]
+	],
+	"VERBOSITY" : 0
+}

@@ -1,0 +1,12 @@
+E:/General/Документы/GitHub/RBOT/build/RBOT.dir/RelWithDebInfo/mocs_compilation.obj
+E:/General/Документы/GitHub/RBOT/build/RBOT.dir/RelWithDebInfo/main.obj
+E:/General/Документы/GitHub/RBOT/build/RBOT.dir/RelWithDebInfo/model.obj
+E:/General/Документы/GitHub/RBOT/build/RBOT.dir/RelWithDebInfo/object3d.obj
+E:/General/Документы/GitHub/RBOT/build/RBOT.dir/RelWithDebInfo/optimization_engine.obj
+E:/General/Документы/GitHub/RBOT/build/RBOT.dir/RelWithDebInfo/pose_estimator6d.obj
+E:/General/Документы/GitHub/RBOT/build/RBOT.dir/RelWithDebInfo/rendering_engine.obj
+E:/General/Документы/GitHub/RBOT/build/RBOT.dir/RelWithDebInfo/signed_distance_transform2d.obj
+E:/General/Документы/GitHub/RBOT/build/RBOT.dir/RelWithDebInfo/tclc_histograms.obj
+E:/General/Документы/GitHub/RBOT/build/RBOT.dir/RelWithDebInfo/template_view.obj
+E:/General/Документы/GitHub/RBOT/build/RBOT.dir/RelWithDebInfo/transformations.obj
+E:/General/Документы/GitHub/RBOT/build/RBOT.dir/RelWithDebInfo/unity_interface.obj
