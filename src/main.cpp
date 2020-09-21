@@ -44,42 +44,9 @@
 using namespace std;
 using namespace cv;
 
-cv::Mat drawResultOverlay(const vector<Object3D*>& objects, const cv::Mat& frame)
-{
-	// render the models with phong shading
-	RenderingEngine::Instance()->setLevel(0);
-
-	vector<Point3f> colors;
-	colors.push_back(Point3f(1.0, 0.5, 0.0));
-	//colors.push_back(Point3f(0.2, 0.3, 1.0));
-	RenderingEngine::Instance()->renderShaded(vector<Model*>(objects.begin(), objects.end()), GL_FILL, colors, true);
-
-	// download the rendering to the CPU
-	Mat rendering = RenderingEngine::Instance()->downloadFrame(RenderingEngine::RGB);
-
-	// download the depth buffer to the CPU
-	Mat depth = RenderingEngine::Instance()->downloadFrame(RenderingEngine::DEPTH);
-
-	// compose the rendering with the current camera image for demo purposes (can be done more efficiently directly in OpenGL)
-	Mat result = frame.clone();
-	for (int y = 0; y < frame.rows; y++)
-	{
-		for (int x = 0; x < frame.cols; x++)
-		{
-			Vec3b color = rendering.at<Vec3b>(y, x);
-			if (depth.at<float>(y, x) != 0.0f)
-			{
-				result.at<Vec3b>(y, x)[0] = color[2];
-				result.at<Vec3b>(y, x)[1] = color[1];
-				result.at<Vec3b>(y, x)[2] = color[0];
-			}
-		}
-	}
-	return result;
-}
-
 int main(int argc, char *argv[])
 {
+	/*
 	QApplication a(argc, argv);
 
 	// camera image size
@@ -148,4 +115,5 @@ int main(int argc, char *argv[])
 	objects.clear();
 
 	delete poseEstimator;
+	*/
 }
