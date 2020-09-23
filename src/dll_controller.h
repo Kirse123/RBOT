@@ -26,8 +26,8 @@ public:
 		*  maps for image undistorting and the rendering engine, given
 		*  the 3x3 float intrinsic camera matrix
 		*  inK = [fx 0 cx]
-		*      [0 fy cy]
-		*      [0  0  1]
+		*        [0 fy cy]
+		*        [0  0  1]
 		*  and distortion coefficients(as needed by OpenCV).
 		*  It also initializes the OpenGL rendering buffers for all
 		*  provided 3D objects using the OpenGL context of the engine.
@@ -85,7 +85,7 @@ public:
 		*  @param qualityThreshold  The individual quality tracking quality threshold used to decide whether tracking and detection have been successful(should be within[0.5, 0.6]).
 		*  @param templateDistances  A vector of absolute Z - distance values to be used for template generation(typically 3 values: a close, an intermediate and a far distance)
 	*/
-	int AddObj(std::string fileName, float tx, float ty, float tz, float alpha, float beta, float gamma, float scale, float qualityThreshold, std::vector<float> &templateDistances = DllController::Instance()->distances);
+	int AddObj(std::string fullFileName, float tx, float ty, float tz, float alpha, float beta, float gamma, float scale, float qualityThreshold, std::vector<float> &templateDistances = DllController::Instance()->distances);
 	
 	/*
 		*  Converts Unity texture into CVMat

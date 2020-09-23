@@ -6,6 +6,7 @@
 #include <stdio.h>
 #include <io.h>
 #include <string>
+#include <vector>
 
 #include "object3d.h"
 #include "pose_estimator6d.h"
@@ -17,18 +18,16 @@ using namespace cv;
 	int Init(const char* path, int camera_width, int camera_hight, float inZNear, float inZFar, float* inK, float* inDistCoeffs) {
 
 		std::string tmpStr = std::string(path);
-		int res = DllController::Instance()->Init(tmpStr, camera_width, camera_hight, inZNear, inZFar, inK, inDistCoeffs);
+		int resCode = DllController::Instance()->Init(tmpStr, camera_width, camera_hight, inZNear, inZFar, inK, inDistCoeffs);
 
-		return res;
+		return resCode;
 	}
 
-	int AddObj3d(char* fileName, float tx, float ty, float tz, float alpha, float beta, float gamma, float scale, float qualityThreshold, float* templateDistances) {
+	int AddObj3d(char* fullFileName, float tx, float ty, float tz, float alpha, float beta, float gamma, float scale, float qualityThreshold, float* templateDistances) {
+		
+		std::vector<float> dist = { templateDistances[0], templateDistances[1], templateDistances[2] };
 
-		if (!DllController::Instance()->IsInitialized()) {
-			return -4;
-		}
-	
-		std::string tmpFileName = std::string(fileName);
+		std::string tmpFileName = std::string(fullFileName);
 		int resCode = DllController::Instance()->AddObj(tmpFileName, tx, ty, tz, alpha, beta, gamma, scale, qualityThreshold);
 
 		return resCode;

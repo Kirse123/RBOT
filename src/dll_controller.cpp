@@ -1,22 +1,19 @@
 
 #include "dll_controller.h"
+	
+	char *argv[4] = { "RBOT_DLL", "arg1", "arg2", NULL };
+	int argc = sizeof(argv) / sizeof(char*) - 1;
+	QApplication a(argc, argv);
 
 	DllController::DllController() 
 	{
 		poseEstimator = NULL;
+		//char *argv[4] = { "RBOT_DLL", "arg1", "arg2", NULL };
+		//int argc = sizeof(argv) / sizeof(char*) - 1;
+		//QApplication a(argc, argv);
 	}
 
 	DllController* DllController::controllerInstance = NULL;
-	
-	char *argv[4] = { "RBOT_DLL", "arg1", "arg2", NULL };
-	int argc = sizeof(argv) / sizeof(char*) - 1;
-	extern QApplication a{ argc, argv };
-	
-
-
-	//char* DllController::argv[4] = { "RBOT_DLL", "arg1", "arg2", NULL };
-	//int DllController::argc = sizeof(argv) / sizeof(char*) - 1;
-	//QApplication DllController::a{ argc, argv };
 
 	DllController* DllController::Instance(void) {
 		if (controllerInstance == NULL)
@@ -66,16 +63,29 @@
 
 		//TODO: change initial model's pose
 		//Debug==================================================
+		currentFrame = cv::imread("E:\\data\\frame.png");
+		
 		//std::string fileName = "E:\\data\\squirrel_demo_low.obj";
+		//if (!FileExists(&fileName[0])) {
+		//	return -2;
+		//}
 		//objects.push_back(new Object3D(fileName, 15, -35, 515, 55, -20, 205, 1.0, 0.55f, distances));
 		//cout << "size " <<objects.size() << endl;
 		//==========================================================
 
+		if (poseEstimator != NULL)
+			delete poseEstimator;
+
 		// create the pose estimator
-		//poseEstimator = new PoseEstimator6D(width, height, zNear, zFar, K, distCoeffs, objects);
+		poseEstimator = new PoseEstimator6D(width, height, zNear, zFar, K, distCoeffs, objects);
 
 		// active the OpenGL context for the offscreen rendering engine during pose estimation
 		RenderingEngine::Instance()->makeCurrent();
+
+		std::cout << "[In Init] objetcs.size(): " << objects.size() << std::endl;	//shows correct
+
+		poseEstimator->toggleTracking(currentFrame, 0, false);
+		std::cout << "[In Init] Estimator toggled" << std::endl;
 
 		initialized = true;
 
@@ -89,21 +99,17 @@
 		//===============================================
 		if (currentFrame.empty())
 			return -1;
-		//std::cout << "size " << objects.size() << endl;
+		std::cout << "[In EstimatePose] objetcs.size(): " << objects.size() << std::endl;
 		if (objects.size() == 0) {
 			return -2;
 		}
-
 		//=================Debug output==========================
-		imshow("test", currentFrame);
-		cv::waitKey(1);
+		//imshow("test", currentFrame);
+		//cv::waitKey(1);
 		//=======================================================
 
 		// the main pose update call
 		poseEstimator->estimatePoses(currentFrame, undistortFrame, checkForLoss);
-
-		// debug console output
-		//std::cout << "Estimated pose " << objects[0]->getPose() << endl;
 
 		cv::Matx44f res = objects[0]->getPose();
 		for (int i = 0; i < 4; ++i) {
@@ -115,22 +121,19 @@
 		return 0;
 	}
 
-	int DllController::AddObj(std::string fileName, float tx, float ty, float tz, float alpha, float beta, float gamma, float scale, float qualityThreshold, std::vector<float> &templateDistances) 
+	int DllController::AddObj(std::string fullFileName, float tx, float ty, float tz, float alpha, float beta, float gamma, float scale, float qualityThreshold, std::vector<float> &templateDistances) 
 	{		
-		std::string fullFileName = models_folder + "\\" + fileName;
-		//wstring fullFileName = L"E:\\dataÊÐÄ\\squirrel_demo_low.obj";
-		//string fullFileName = "E:\\General\\Äîêóìåíòû\\GitHub\\Unity\\Unity_RBOT\\Unity_RBOT\\Assets\\RBOT_Models\\squirrel_demo_low.obj";
-		//check if file exists
+		//std::string fullFileName = models_folder + "\\" + fileName;
+
 		if (!FileExists(&fullFileName[0])) {
 			return -2;
 		}
 		//load 3D-object
 		objects.push_back(new Object3D(fullFileName, tx, ty, tz, alpha, beta, gamma, scale, qualityThreshold, templateDistances));
-
-		if (poseEstimator != NULL)
-			delete poseEstimator;
-		poseEstimator = new PoseEstimator6D(width, height, zNear, zFar, K, distCoeffs, objects);
-		
+		//==========================================================================
+		//currentFrame = cv::imread("E:\\data\\frame.png");
+		//poseEstimator->toggleTracking(currentFrame, objects.size() - 1, false);
+		//===========================================================================
 		return 0;
 	}
 

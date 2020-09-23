@@ -6,7 +6,7 @@
 ///<summary>Updates models 6DOF, according to image</summary>
 extern "C" int RBOT_API EstimatePose(float* outData, bool undistortFrame, bool checkForLoss);
 
-///<summary>Initiate some RBOT vars and starts QApplication</summary>
+///<summary>Initiate RBOT vars and starts QApplication. Should be called when object3d are added</summary>
 extern "C" int RBOT_API Init(const char* path, int camera_width, int camera_hight, float inZNear, float inZFar, float* inK, float* inDistCoeffs);
 
 extern "C" void RBOT_API Close();
@@ -15,7 +15,7 @@ extern "C" void RBOT_API Close();
 extern "C" int RBOT_API TextureToCVMat(unsigned char* framePtr, int height, int width);
 
 ///<summary>Add 3d-object to vector and loads it from disk</summary>
-extern "C" int RBOT_API AddObj3d(char* fileName, float tx, float ty, float tz, float alpha, float beta, float gamma, float scale, float qualityThreshold, float* templateDistances);
+extern "C" int RBOT_API AddObj3d(char* fullFileName, float tx, float ty, float tz, float alpha, float beta, float gamma, float scale, float qualityThreshold, float* templateDistances);
 
 ///<summary>Toggle tracking for selected object</summary>
 extern "C" int RBOT_API ToggleTracking(int objectIndex, bool undistortFrame);
