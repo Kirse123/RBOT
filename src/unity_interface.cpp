@@ -27,13 +27,14 @@ Mat* testMat;
 PoseEstimator6D* poseEstimator = nullptr;
 string models_folder = "";
 
-char *argv[] = { "RBOT_DLL", "arg1", "arg2", NULL };
-int argc = sizeof(argv) / sizeof(char*) - 1;
-QApplication a(argc, argv);
-
+QApplication* a;
 
 ///<summary>Initiate some RBOT vars and starts QApplication</summary>
 int Init(int camera_width, int camera_hight, const char* path) {
+	
+	char *argv[] = { "RBOT_DLL", "arg1", "arg2", NULL };
+	int argc = sizeof(argv) / sizeof(char*) - 1;
+	a = new QApplication(argc, argv);
 
 	//camera image size (image)
 	width = camera_width;
@@ -95,7 +96,7 @@ int AddObj(char* fileName) {
 ///<summary>Updates models 6DOF, according to image</summary>
 int GetPose(float* outData) {
 	//=============================
-	//TextureToCVMat();
+	currentFrame = imread("E:\\data\\frame.png");
 	//=============================
 	if (currentFrame.empty())
 		return -1;
@@ -107,11 +108,10 @@ int GetPose(float* outData) {
 	imshow("test", currentFrame);
 	waitKey(1);
 	// the main pose update call
-	poseEstimator->estimatePoses(currentFrame, false, !isOn);
+	poseEstimator->estimatePoses(currentFrame, false, true);
 
 	cout << "Estimated pose " << objects[0]->getPose() << endl;
 	
-
 	if (!isOn)
 	{
 		poseEstimator->toggleTracking(currentFrame, 0, false);
