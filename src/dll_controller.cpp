@@ -1,9 +1,5 @@
 
-#include "dll_controller.h"
-	
-	char *argv[4] = { "RBOT_DLL", "arg1", "arg2", NULL };
-	int argc = sizeof(argv) / sizeof(char*) - 1;
-	QApplication a(argc, argv);
+#include "dll_controller.h"	
 
 	DllController::DllController() 
 	{
@@ -40,11 +36,11 @@
 		}
 	}
 
-	int DllController::Init(std::string path, int camera_width, int camera_hight, float inZNear, float inZFar, float* inK, float* inDistCoeffs)
+	int DllController::Init(std::string path, int camera_width, int camera_height, float inZNear, float inZFar, float* inK, float* inDistCoeffs)
 	{		
 		//camera image size (image)
 		width = camera_width;
-		height = camera_hight;
+		height = camera_height;
 
 		// set folder with models
 		models_folder = path;
@@ -63,14 +59,17 @@
 
 		//TODO: change initial model's pose
 		//Debug==================================================
+		std::cout << "K = " << K << std::endl;
+		
 		currentFrame = cv::imread("E:\\data\\frame.png");
 		
-		//std::string fileName = "E:\\data\\squirrel_demo_low.obj";
-		//if (!FileExists(&fileName[0])) {
-		//	return -2;
-		//}
-		//objects.push_back(new Object3D(fileName, 15, -35, 515, 55, -20, 205, 1.0, 0.55f, distances));
-		//cout << "size " <<objects.size() << endl;
+		std::string fileName = "E:\\data\\squirrel_demo_low.obj";
+		if (!FileExists(&fileName[0])) {
+			return -2;
+		}
+		objects.push_back(new Object3D(fileName, 15, -35, 515, 55, -20, 205, 1.0, 0.55f, distances));
+
+		std::cout << "[In Init] Object loaded" << std::endl;
 		//==========================================================
 
 		if (poseEstimator != NULL)
@@ -82,10 +81,10 @@
 		// active the OpenGL context for the offscreen rendering engine during pose estimation
 		RenderingEngine::Instance()->makeCurrent();
 
-		std::cout << "[In Init] objetcs.size(): " << objects.size() << std::endl;	//shows correct
+		std::cout << "[In Init] objects.size(): " << objects.size() << std::endl;	//shows correct
 
-		poseEstimator->toggleTracking(currentFrame, 0, false);
-		std::cout << "[In Init] Estimator toggled" << std::endl;
+		//poseEstimator->toggleTracking(currentFrame, 0, false);
+		//std::cout << "[In Init] Estimator toggled" << std::endl;
 
 		initialized = true;
 
@@ -95,7 +94,7 @@
 	int DllController::EstimatePose(float* outData, bool undistortFrame, bool checkForLoss) 
 	{
 		//===========Debug frame=========================
-		currentFrame = cv::imread("E:\\data\\frame.png");
+		this->currentFrame = cv::imread("E:\\data\\frame.png");
 		//===============================================
 		if (currentFrame.empty())
 			return -1;
@@ -108,8 +107,19 @@
 		//cv::waitKey(1);
 		//=======================================================
 
+		poseEstimator->estimatePoses(currentFrame, false, true);
+
+		std::cout << "TRS-MAT: " << objects[0]->getPose() << std::endl;
+
+		if (!objects[0]->isInitialized())
+		{
+			poseEstimator->toggleTracking(currentFrame, 0, false);
+			std::cout << "[In EstimatePose] Toggled" << std::endl;
+			poseEstimator->estimatePoses(currentFrame, false, false);
+		}
+
 		// the main pose update call
-		poseEstimator->estimatePoses(currentFrame, undistortFrame, checkForLoss);
+		//poseEstimator->estimatePoses(currentFrame, undistortFrame, checkForLoss);
 
 		cv::Matx44f res = objects[0]->getPose();
 		for (int i = 0; i < 4; ++i) {

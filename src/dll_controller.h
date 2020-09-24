@@ -32,7 +32,7 @@ public:
 		*  It also initializes the OpenGL rendering buffers for all
 		*  provided 3D objects using the OpenGL context of the engine.
 	*/
-	int Init(std::string path, int camera_width, int camera_hight, float inZNear, float inZFar, float* inK, float* inDistCoeffs);
+	int Init(std::string path, int camera_width, int camera_height, float inZNear, float inZFar, float* inK, float* inDistCoeffs);
 	
 	
 	/**

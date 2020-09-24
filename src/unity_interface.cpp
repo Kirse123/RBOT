@@ -15,10 +15,14 @@
 
 using namespace cv;
 
-	int Init(const char* path, int camera_width, int camera_hight, float inZNear, float inZFar, float* inK, float* inDistCoeffs) {
+	char *argv[4] = { "RBOT_DLL", "arg1", "arg2", NULL };
+	int argc = sizeof(argv) / sizeof(char*) - 1;
+	QApplication a(argc, argv);
+
+	int Init(const char* path, int camera_width, int camera_height, float inZNear, float inZFar, float* inK, float* inDistCoeffs) {
 
 		std::string tmpStr = std::string(path);
-		int resCode = DllController::Instance()->Init(tmpStr, camera_width, camera_hight, inZNear, inZFar, inK, inDistCoeffs);
+		int resCode = DllController::Instance()->Init(tmpStr, camera_width, camera_height, inZNear, inZFar, inK, inDistCoeffs);
 
 		return resCode;
 	}

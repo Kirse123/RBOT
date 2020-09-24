@@ -454,6 +454,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src\dll_controller.cpp" />
+    <ClCompile Include="..\src\old_ver.cpp" />
     <ClCompile Include="E:\General\Документы\GitHub\RBOT\build\RBOT_autogen\mocs_compilation.cpp" />
     <ClCompile Include="E:\General\Документы\GitHub\RBOT\src\main.cpp" />
     <ClCompile Include="E:\General\Документы\GitHub\RBOT\src\model.cpp" />
