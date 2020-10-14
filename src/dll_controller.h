@@ -3,8 +3,10 @@
 
 #include <QApplication>
 #include <QThread>
+
 #include <opencv2/core.hpp>
 #include <opencv2/highgui.hpp>
+
 #include <filesystem>
 #include <stdio.h>
 #include <io.h>
@@ -19,7 +21,11 @@ public:
 	/*
 		*	Method returning reference to an instance field and realizing Singlton pattern
 	*/
-	static DllController* Instance(void);
+	static DllController *Instance(void){
+		if (controllerInstance == NULL)
+			controllerInstance = new DllController();
+		return controllerInstance;
+	}
 	
 	/*
 		*  Initializer of the pose estimator initializing rectification
@@ -32,7 +38,7 @@ public:
 		*  It also initializes the OpenGL rendering buffers for all
 		*  provided 3D objects using the OpenGL context of the engine.
 	*/
-	int Init(std::string path, int camera_width, int camera_height, float inZNear, float inZFar, float* inK, float* inDistCoeffs);
+	int CreatePoseEstimator(int camera_width, int camera_height, float inZNear, float inZFar, float* inK, float* inDistCoeffs, float* inDistances);
 	
 	
 	/**
@@ -87,6 +93,8 @@ public:
 	*/
 	int AddObj(std::string fullFileName, float tx, float ty, float tz, float alpha, float beta, float gamma, float scale, float qualityThreshold, std::vector<float> &templateDistances = DllController::Instance()->distances);
 	
+	int RemoveObj(int index);
+
 	/*
 		*  Converts Unity texture into CVMat
 	*/
@@ -132,12 +140,6 @@ private:
 	// Path to the folder, where 3D-models are stored
 	std::string models_folder;
 
-	// Arguments and field for stroring QApp instance
-	//char* argv[4];
-	//int argc;
-	//QApplication a{ argc, argv };
-	//QApplication a;
-
 	// Initializating flag
 	bool initialized = false;
 
@@ -148,5 +150,5 @@ private:
 
 	~DllController();
 };
-#endif // !CONTROLLER_H
+#endif // !DLL_CONTROLLER_H
 

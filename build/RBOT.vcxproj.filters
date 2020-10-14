@@ -40,9 +40,6 @@
     <ClCompile Include="..\src\dll_controller.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\old_ver.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="E:\General\Документы\GitHub\RBOT\src\model.h">
